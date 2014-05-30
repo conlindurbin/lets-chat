@@ -97,14 +97,14 @@ var Client = function(config) {
                 store.set('openrooms', [id]);
             }
         });
-    }
-    this.createRoom = function (room, switchRoom) {
-        self.socket.emit('rooms:create', room)
-    }
-    this.leaveRoom = function(id) {
-        var room = self.rooms.get(id);
-        self.rooms.remove(room);
-        self.socket.emit('room:leave', id);
+}
+this.createRoom = function (room, switchRoom) {
+    self.socket.emit('rooms:create', room)
+}
+this.leaveRoom = function(id) {
+    var room = self.rooms.get(id);
+    self.rooms.remove(room);
+    self.socket.emit('room:leave', id);
         //
         // Remove room id from localstorage
         //

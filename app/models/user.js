@@ -25,7 +25,7 @@ var UserSchema = new Schema({
     },
     password: {
         type: String,
-        required: true,
+        required: false,
         trim: true,
         set: function(p) {
             // This is kinda wonky
@@ -66,7 +66,7 @@ var UserSchema = new Schema({
     },
 	messages: [{
 		type: Schema.ObjectId,
-		ref: 'Message' 
+		ref: 'Message'
 	}]
 });
 

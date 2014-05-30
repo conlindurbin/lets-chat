@@ -16,6 +16,7 @@ var cons = require('consolidate');
 var hash = require('node_hash');
 var moment = require('moment');
 var passport = require('passport');
+var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 var LocalStrategy = require('passport-local').Strategy;
 var knox = require('knox');
 
@@ -45,11 +46,11 @@ var Server = function(config) {
 
     // Mongo URL
     self.mongoURL = self.config.db_url || 'mongodb://'
-        + self.config.db_user
-        + ':' + self.config.db_password
-        + '@' + self.config.db_host 
-        + ':' + self.config.db_port 
-        + '/' + self.config.db_name;
+    + self.config.db_user
+    + ':' + self.config.db_password
+    + '@' + self.config.db_host
+    + ':' + self.config.db_port
+    + '/' + self.config.db_name;
 
     // Create express app
     self.app = express();
@@ -71,7 +72,7 @@ var Server = function(config) {
             key: 'express.sid',
             cookie: {
                 httpOnly: false // We have to turn off httpOnly for websockets
-            }, 
+            },
             secret: self.config.cookie_secret,
             store: self.sessionStore
         }));
@@ -99,32 +100,55 @@ var Server = function(config) {
     });
 
     // Authentication
-    passport.use(new LocalStrategy({
-            usernameField: 'email',
-            passwordField: 'password'
-        },
-        function(email, password, done) {
-            models.user.findOne({
-                'email': email
-            }).exec(function(err, user) {
-                if (err) {
-                    return done(null, false,  { message: 'Some fields did not validate.' });
-                }
-                var hashedPassword = hash.sha256(password, self.config.password_salt)
-                if (user && hashedPassword === user.password) {
-                    return done(null, user);
-                } else {
-                    return done(null, false, { message: 'Incorrect password.' });
-                }
+    passport.use(new GoogleStrategy(config.googleAuth, function(accessToken, refreshToken, profile, done) {
+        models.user.findOne({
+         'email': profile.emails[0].value
+     }).exec(function(err, user) {
+        if (err) {
+            return done(null, false,  { message: 'Some fields did not validate.' });
+        }
+        if(user===null) {
+            var newUser = new models.user({
+                email: profile.emails[0].value,
+                firstName: profile.name.givenName,
+                lastName: profile.name.familyName,
+                displayName: profile.displayName
+            });
+            newUser.save(function(err, user) {
+                return done(null, user);
             });
         }
+        return done(null, user);
+    });
+ }));
+
+    passport.use(new LocalStrategy({
+        usernameField: 'email',
+        passwordField: 'password'
+    },
+    function(email, password, done) {
+        models.user.findOne({
+            'email': email
+        }).exec(function(err, user) {
+            if (err) {
+                return done(null, false,  { message: 'Some fields did not validate.' });
+            }
+            var hashedPassword = hash.sha256(password, self.config.password_salt)
+            if (user && hashedPassword === user.password) {
+                return done(null, user);
+            } else {
+                return done(null, false, { message: 'Incorrect password.' });
+            }
+        });
+    }
     ));
+
     passport.serializeUser(function(user, done) {
         done(null, user._id);
     });
     passport.deserializeUser(function(id, done) {
         models.user.findOne({
-            _id: id 
+            _id: id
         }).exec(function(err, user) {
             done(err, user);
         });
@@ -155,14 +179,24 @@ var Server = function(config) {
     //
     self.app.get('/login', function(req, res) {
         var image = _.chain(fs.readdirSync(path.resolve('media/img/photos'))).filter(function(file){
-                return /\.(gif|jpg|jpeg|tiff|png)$/i.test(file);
-            }).sample().value();
+            return /\.(gif|jpg|jpeg|tiff|png)$/i.test(file);
+        }).sample().value();
         res.render('login.html', {
             media_url: self.config.media_url,
             next: req.param('next', ''),
             disableRegistration: self.config.disable_registration,
             photo: image
         });;
+    });
+
+    self.app.get('/auth/google',
+        passport.authenticate('google', { scope: ['https://www.googleapis.com/auth/userinfo.profile',
+        'https://www.googleapis.com/auth/userinfo.email'] }));
+
+    self.app.get('/auth/google/callback',
+        passport.authenticate('google', { failureRedirect: '/login' }),
+            function(req, res) {
+            res.redirect('/');
     });
 
     //
@@ -279,7 +313,7 @@ var Server = function(config) {
                     });
                 });
             });
-        });
+});
         //
         // Edit Profile
         //
@@ -325,7 +359,7 @@ var Server = function(config) {
                     });
                 });
             });
-        });
+});
         //
         // Account Settings
         //
@@ -372,7 +406,7 @@ var Server = function(config) {
                     });
                 });
             });
-        });
+});
         //
         // File uploadin'
         // TODO: Some proper error handling
@@ -399,7 +433,7 @@ var Server = function(config) {
                     });
                     return;
                 }
-                
+
                 // Lets see if this room exists
                 models.room.findOne({
                     '_id': roomID
@@ -481,14 +515,14 @@ var Server = function(config) {
                                 status: 'success',
                                 message: savedFile.name + ' has been saved!',
                                 url: url
-                            }); 
+                            });
                         });
-                    });  
+});
 
-                });
-            });
-        });
-    });
+});
+});
+});
+});
 
     //
     // View files
@@ -522,12 +556,12 @@ var Server = function(config) {
 
         //check if dates in the parameters are 6 digit numbers
         if(!dateParamPattern.test(req.params.fromDate) ||
-           !dateParamPattern.test(req.params.toDate)) {
-           res.send(400, 'Invalid parameters');
-        }
+         !dateParamPattern.test(req.params.toDate)) {
+         res.send(400, 'Invalid parameters');
+ }
 
-        var fromDate = moment(req.params.fromDate, "DDMMYYYY");
-        var toDate = moment(req.params.toDate, "DDMMYYYY");
+ var fromDate = moment(req.params.fromDate, "DDMMYYYY");
+ var toDate = moment(req.params.toDate, "DDMMYYYY");
 
         // Lookup room
         models.room.findById(req.params.room, function(err, room) {
@@ -582,8 +616,8 @@ var Server = function(config) {
                     }
                 });
             });
-        });
-    });
+});
+});
 
     //
     // Start
@@ -596,7 +630,7 @@ var Server = function(config) {
             if (!self.config.https) {
                 // Create regular HTTP server
                 self.server = http.createServer(self.app)
-                  .listen(self.config.port, self.config.host);
+                .listen(self.config.port, self.config.host);
             } else {
                 // Setup HTTP -> HTTP redirect server
                 var redirectServer = express();
@@ -604,7 +638,7 @@ var Server = function(config) {
                     res.redirect('https://' + req.host + ':' + self.config.https.port + req.path)
                 })
                 http.createServer(redirectServer)
-                  .listen(self.config.port, self.config.host);
+                .listen(self.config.port, self.config.host);
                 // Create HTTPS server
                 self.server = https.createServer({
                     key: fs.readFileSync(self.config.https.key),
@@ -613,8 +647,8 @@ var Server = function(config) {
             }
             self.chatServer = new ChatServer(config, self.server, self.sessionStore).start();
         });
-        return this;
-    };
+return this;
+};
 
 };
 

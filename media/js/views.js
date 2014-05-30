@@ -2,12 +2,12 @@
 // Backbone 1.1 legacy options shim
 //
 Backbone.View = (function(View) {
-   return View.extend({
-        constructor: function(options) {
-            this.options = options || {};
-            View.apply(this, arguments);
-        }
-    });
+ return View.extend({
+    constructor: function(options) {
+        this.options = options || {};
+        View.apply(this, arguments);
+    }
+});
 })(Backbone.View);
 
 //
@@ -55,15 +55,15 @@ var RoomListView = Backbone.View.extend({
                 }
             });
         });
-        this.collection.bind('remove', function(room) {
-            self.remove(room.id);
-        });
-        this.collection.bind('reset', function() {
-            self.empty();
-        });
-        self.$list.masonry({
-            itemSelector: '.room'
-        });
+this.collection.bind('remove', function(room) {
+    self.remove(room.id);
+});
+this.collection.bind('reset', function() {
+    self.empty();
+});
+self.$list.masonry({
+    itemSelector: '.room'
+});
         // Masonry shims
         this.options.notifications.on('homeselected', function() {
             self.updateMasonry(true);
@@ -85,7 +85,7 @@ var RoomListView = Backbone.View.extend({
     },
     removeUser: function(user) {
         this.$('.room[data-id=' + user.room + ']')
-          .find('.user[data-uid=' + user.uid + ']').remove();
+        .find('.user[data-uid=' + user.uid + ']').remove();
         this.updateMasonry();
     },
     updateRoom: function(room) {
@@ -276,7 +276,8 @@ var RoomView = Backbone.View.extend({
         'submit .edit-room form': 'submitEditRoom',
         'click .delete-room': 'deleteRoom',
         'click .show-edit-room': 'showEditRoom',
-        'click .hide-edit-room': 'hideEditRoom'
+        'click .hide-edit-room': 'hideEditRoom',
+        'click .entry .video': 'startVideo',
     },
     lastMessageOwner: false,
     lastMessageTime: false,
@@ -404,16 +405,16 @@ var RoomView = Backbone.View.extend({
         //
         if (navigator.userAgent.indexOf('WebKit/') < 0) {
             var height = $(window).height() -
-                $('header.navbar').outerHeight() -
-                parseInt(this.$('.chat').css('margin-top'), 10) -
-                parseInt(this.$('.chat').css('margin-bottom'), 10) -
-                this.$('.entry').outerHeight() - 1;
+            $('header.navbar').outerHeight() -
+            parseInt(this.$('.chat').css('margin-top'), 10) -
+            parseInt(this.$('.chat').css('margin-bottom'), 10) -
+            this.$('.entry').outerHeight() - 1;
             this.$messages.height(height);
         }
     },
     updateScrollLock: function() {
         this.scrollLocked = this.$messages[0].scrollHeight -
-          this.$messages.scrollTop() - 5 <= this.$messages.outerHeight();
+        this.$messages.scrollTop() - 5 <= this.$messages.outerHeight();
         return this.scrollLocked;
     },
     scrollMessagesDown: function(debounce) {
@@ -474,46 +475,93 @@ var RoomView = Backbone.View.extend({
         });
         $textarea.val('');
     },
-    showEditRoom: function(e) {
+    startVideo: function(e) {
         var self = this;
-        if (e) {
-            e.preventDefault();
-        }
-        this.$('.edit-room').modal();
-    },
-    hideEditRoom: function(e) {
-        if (e) {
-            e.preventDefault();
-        }
-        this.$('.edit-room').modal('hide');
-    },
-    submitEditRoom: function(e) {
-        e.preventDefault();
-        var name = this.$('.edit-room input[name="name"]').val();
-        var description = this.$('.edit-room textarea[name="description"]').val();
-        this.notifications.trigger('updateroom', {
-            id: this.model.id,
-            name: name,
-            description: description
+        console.log("Video!");
+        function showVolume(el, volume) {
+            if (!el) return;
+                if (volume < -45) { // vary between -45 and -20
+                    el.style.height = '0px';
+                } else if (volume > -20) {
+                    el.style.height = '100%';
+                } else {
+                    el.style.height = '' + Math.floor((volume + 100) * 100 / 25 - 220) + '%';
+                }
+            }
+            var webrtc = new SimpleWebRTC({
+            // the id/element dom element that will hold "our" video
+            localVideoEl: 'localVideo',
+            // the id/element dom element that will hold remote videos
+            remoteVideosEl: 'remotesVideos',
+            // immediately ask for camera access
+            autoRequestMedia: true,
+            debug: false,
+            detectSpeakingEvents: true,
+            autoAdjustMic: true
         });
-        this.hideEditRoom();
-    },
-    deleteRoom: function(e) {
-        e.preventDefault();
-        var serious = confirm('Do you really want to to delete "' + this.model.get('name') +  '"?');
-        if (serious === true) {
-            this.notifications.trigger('deleteroom', this.model.id);
+            webrtc.on('readyToCall', function () {
+            // you can name it anything
+            webrtc.joinRoom(self.model.id);
+        });
+            function showVolume(el, volume) {
+                if (!el) return;
+                if (volume < -45) { // vary between -45 and -20
+                    el.style.height = '0px';
+                } else if (volume > -20) {
+                    el.style.height = '100%';
+                } else {
+                    el.style.height = '' + Math.floor((volume + 100) * 100 / 25 - 220) + '%';
+                }
+            }
+            webrtc.on('channelMessage', function (peer, label, data) {
+                if (data.type == 'volume') {
+                    showVolume(document.getElementById('volume_' + peer.id), data.volume);
+                }
+            });
+            webrtc.on('localStream', function (stream) {
+                $('.video').attr('disabled', null);
+            });
+        },
+        showEditRoom: function(e) {
+            var self = this;
+            if (e) {
+                e.preventDefault();
+            }
+            this.$('.edit-room').modal();
+        },
+        hideEditRoom: function(e) {
+            if (e) {
+                e.preventDefault();
+            }
+            this.$('.edit-room').modal('hide');
+        },
+        submitEditRoom: function(e) {
+            e.preventDefault();
+            var name = this.$('.edit-room input[name="name"]').val();
+            var description = this.$('.edit-room textarea[name="description"]').val();
+            this.notifications.trigger('updateroom', {
+                id: this.model.id,
+                name: name,
+                description: description
+            });
+            this.hideEditRoom();
+        },
+        deleteRoom: function(e) {
+            e.preventDefault();
+            var serious = confirm('Do you really want to to delete "' + this.model.get('name') +  '"?');
+            if (serious === true) {
+                this.notifications.trigger('deleteroom', this.model.id);
+            }
+        },
+        updateName: function(name) {
+            this.$('.sidebar .room-name').text(name);
+            this.$('.edit-room input[name="name"]').val(name);
+        },
+        updateDescription: function(description) {
+            this.$('.sidebar .meta .description').text(description);
+            this.$('.edit-room textarea[name="description"]').val(description);
         }
-    },
-    updateName: function(name) {
-        this.$('.sidebar .room-name').text(name);
-        this.$('.edit-room input[name="name"]').val(name);
-    },
-    updateDescription: function(description) {
-        this.$('.sidebar .meta .description').text(description);
-        this.$('.edit-room textarea[name="description"]').val(description);
-    }
-});
+    });
 
 //
 // Tabs Menu
@@ -564,12 +612,12 @@ var TabsMenuView = Backbone.View.extend({
     select: function(id) {
         this.current = id;
         this.$tab(id)
-          .addClass('selected')
+        .addClass('selected')
           .data('count', 0) // Reset tab alert count
           .siblings().removeClass('selected');
-        this.setBadge(id, 0);
-    },
-    setBadge: function(id, value) {
+          this.setBadge(id, 0);
+      },
+      setBadge: function(id, value) {
         var $badge = this.$tab(id).find('.badge');
         if (value === 0) {
             $badge.hide();
@@ -622,8 +670,8 @@ var TabsView = Backbone.View.extend({
         this.menu.select(id);
         this.$('.view').hide();
         this.$('.view[data-id=' + id + ']')
-            .show()
-            .siblings().hide();
+        .show()
+        .siblings().hide();
         if (this.views[id]) {
             // Does CSS Flex shim
             this.views[id].updateLayout();
@@ -792,8 +840,8 @@ var WindowTitleView = Backbone.View.extend({
                 }
             }
         });
-    },
-    cleanNotifications: function() {
+},
+cleanNotifications: function() {
         // Clean up desktop notifications
         if (notify.isSupported) {
             _.each(this.activeDesktopNotifications.concat(this.activeDesktopNotificationMentions), function(notification) {
@@ -820,7 +868,7 @@ var ExperimentalFeaturesView = Backbone.View.extend({
     render: function() {
         var $input = this.$('[name=desktop-notifications]');
         $input.find('.disabled').show()
-          .siblings().hide();
+        .siblings().hide();
         if (!notify.isSupported) {
             $input.attr('disabled', true);
             // Welp we're done here
@@ -828,11 +876,11 @@ var ExperimentalFeaturesView = Backbone.View.extend({
         }
         if (notify.permissionLevel() === notify.PERMISSION_GRANTED) {
             $input.find('.enabled').show()
-              .siblings().hide();
+            .siblings().hide();
         }
         if (notify.permissionLevel() === notify.PERMISSION_DENIED) {
             $input.find('.blocked').show()
-              .siblings().hide();
+            .siblings().hide();
         }
     },
     toggleDesktopNotifications: function() {
@@ -886,15 +934,15 @@ var ClientView = Backbone.View.extend({
         //
         this.notifications.on('connect', function() {
             self.$('.connection-status')
-                .removeClass('disconnected')
-                .addClass('connected')
-                .html('<i class="icon-refresh"></i>  connected');
+            .removeClass('disconnected')
+            .addClass('connected')
+            .html('<i class="icon-refresh"></i>  connected');
         });
         this.notifications.on('disconnect', function() {
             self.$('.connection-status')
-              .removeClass('connected')
-              .addClass('disconnected')
-              .html('<i class="icon-warning-sign"></i> disconnected');
+            .removeClass('connected')
+            .addClass('disconnected')
+            .html('<i class="icon-warning-sign"></i> disconnected');
         });
         //
         // Room events

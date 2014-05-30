@@ -444,9 +444,16 @@ var ChatServer = function (config, server, sessionStore) {
                 });
             });
 
+            //
+            // Enable Video Chats
+            //
+            client.on('room:video', function() {
+
+            });
         });
 
     };
+
 
     //
     // Utility method to send files from the express server

@@ -20,7 +20,7 @@
                     <time>{{ time }}</time>
                 </div>
                 <div class="text">
-                    {{^paste}}{{ text }}{{/paste}} 
+                    {{^paste}}{{ text }}{{/paste}}
                     {{#paste}}<pre>{{ text }}</pre>{{/paste}}
                 </div>
             </div>
@@ -61,11 +61,15 @@
     <script id="js-tmpl-room" type="text/html">
         <div class="main">
             <div class="chat">
+                <div class="video-them">
+                    <div id="remotesVideos"></div>
+                </div>
                 <ul class="messages file-drop-zone"></ul>
                 <div class="entry file-drop-zone">
                     <textarea type="text" name="talk" class="file-paste-zone"></textarea>
                     <div class="buttons">
                         <button class="send btn btn-info">Send</button>
+                        <button class="video btn btn-success"><i class='icon icon-facetime-video'></i></button>
                     </div>
                 </div>
             </div><!-- chat end -->
@@ -90,11 +94,15 @@
                     <div class="top">
                         <h3>
                             <i class="icon-white icon-user"></i>
-                            <span class="text">Who's here</span>
+                            <span class="text">Who&apos;s here</span>
                             (<span class="count"></span>)
                         </h3>
                     </div>
                     <ul class="user-list"></ul>
+                </div>
+                <div class="video-you">
+                    <h3>Your video:</h3>
+                    <video height="200" width="200" id="localVideo"></video>
                 </div>
                 <div class="files item-list file-drop-zone">
                     <div class="top">

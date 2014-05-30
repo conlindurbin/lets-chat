@@ -1,12 +1,9 @@
 /*********************
  * LCB Styles
  *********************/
-@font-face {
-  font-family: 'Pacifico';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../font/pacifico.woff') format('woff');
-}
+
+
+
 /*!
  * Bootstrap v3.0.0
  *
@@ -531,10 +528,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -543,10 +540,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -5329,7 +5326,7 @@ header .user .dropdown-menu a:hover {
 }
 .page-login .logo {
   width: 100%;
-  font-family: Pacifico;
+  font-family: 'Open Sans', sans-serif;
   font-size: 85px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -5348,7 +5345,7 @@ header .user .dropdown-menu a:hover {
 .page-login legend {
   line-height: 100%;
   color: #555;
-  font-family: pacifico;
+  font-family: 'Open Sans', sans-serif;
   padding-bottom: 15px;
 }
 .page-login input[type="text"],
