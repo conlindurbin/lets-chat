@@ -477,7 +477,6 @@ var RoomView = Backbone.View.extend({
     },
     startVideo: function(e) {
         var self = this;
-        console.log("Video!");
         function showVolume(el, volume) {
             if (!el) return;
                 if (volume < -45) { // vary between -45 and -20
@@ -488,11 +487,14 @@ var RoomView = Backbone.View.extend({
                     el.style.height = '' + Math.floor((volume + 100) * 100 / 25 - 220) + '%';
                 }
             }
+            console.log(self);
+            var localVid =  self.$el[0].querySelector(".video-you");
+            var remoteVid = self.$el[0].querySelector(".video-them");
             var webrtc = new SimpleWebRTC({
             // the id/element dom element that will hold "our" video
-            localVideoEl: 'localVideo',
+            localVideoEl: localVid,
             // the id/element dom element that will hold remote videos
-            remoteVideosEl: 'remotesVideos',
+            remoteVideosEl: remoteVid,
             // immediately ask for camera access
             autoRequestMedia: true,
             debug: false,
@@ -500,7 +502,6 @@ var RoomView = Backbone.View.extend({
             autoAdjustMic: true
         });
             webrtc.on('readyToCall', function () {
-            // you can name it anything
             webrtc.joinRoom(self.model.id);
         });
             function showVolume(el, volume) {

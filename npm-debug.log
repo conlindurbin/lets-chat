@@ -1,0 +1,1296 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'forever' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'forever', null ]
+6 verbose cache add name=undefined spec="forever" args=["forever",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'forever',
+7 verbose parsed url   path: 'forever',
+7 verbose parsed url   href: 'forever' }
+8 silly lockFile e07f8c4a-forever forever
+9 verbose lock forever C:\Users\c.durbin\AppData\Roaming\npm-cache\e07f8c4a-forever.lock
+10 silly lockFile e07f8c4a-forever forever
+11 silly lockFile e07f8c4a-forever forever
+12 verbose addNamed [ 'forever', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 28ef027b-forever forever@
+15 verbose lock forever@ C:\Users\c.durbin\AppData\Roaming\npm-cache\28ef027b-forever.lock
+16 silly addNameRange { name: 'forever', range: '*', hasData: false }
+17 verbose url raw forever
+18 verbose url resolving [ 'https://registry.npmjs.org/', './forever' ]
+19 verbose url resolved https://registry.npmjs.org/forever
+20 info trying registry request attempt 1 at 10:31:19
+21 http GET https://registry.npmjs.org/forever
+22 http 200 https://registry.npmjs.org/forever
+23 silly registry.get cb [ 200,
+23 silly registry.get   { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+23 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+23 silly registry.get     etag: '"5BIQ7TU9H3Z6ZOCVOHHQRKS06"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'cache-control': 'max-age=1',
+23 silly registry.get     'content-length': '64222',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     age: '3053',
+23 silly registry.get     'x-served-by': 'cache-v37-ASH, cache-ord1733-ORD',
+23 silly registry.get     'x-cache': 'HIT, MISS',
+23 silly registry.get     'x-cache-hits': '1, 0',
+23 silly registry.get     'x-timer': 'S1401982403.080394,VS0,VE99',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 silly addNameRange number 2 { name: 'forever', range: '*', hasData: true }
+25 silly addNameRange versions [ 'forever',
+25 silly addNameRange   [ '0.6.0',
+25 silly addNameRange     '0.6.1',
+25 silly addNameRange     '0.6.2',
+25 silly addNameRange     '0.6.3',
+25 silly addNameRange     '0.6.4',
+25 silly addNameRange     '0.6.5',
+25 silly addNameRange     '0.6.6',
+25 silly addNameRange     '0.6.7',
+25 silly addNameRange     '0.6.8',
+25 silly addNameRange     '0.6.9',
+25 silly addNameRange     '0.7.0',
+25 silly addNameRange     '0.7.1',
+25 silly addNameRange     '0.7.2',
+25 silly addNameRange     '0.7.3',
+25 silly addNameRange     '0.7.4',
+25 silly addNameRange     '0.7.5',
+25 silly addNameRange     '0.8.0',
+25 silly addNameRange     '0.8.1',
+25 silly addNameRange     '0.8.2',
+25 silly addNameRange     '0.8.3',
+25 silly addNameRange     '0.8.4',
+25 silly addNameRange     '0.8.5',
+25 silly addNameRange     '0.9.0',
+25 silly addNameRange     '0.9.1',
+25 silly addNameRange     '0.9.2',
+25 silly addNameRange     '0.10.0',
+25 silly addNameRange     '0.10.5',
+25 silly addNameRange     '0.10.6',
+25 silly addNameRange     '0.10.7',
+25 silly addNameRange     '0.10.8',
+25 silly addNameRange     '0.10.9',
+25 silly addNameRange     '0.10.10',
+25 silly addNameRange     '0.10.11',
+25 silly addNameRange     '0.11.0',
+25 silly addNameRange     '0.11.1' ] ]
+26 verbose addNamed [ 'forever', '0.11.1' ]
+27 verbose addNamed [ '0.11.1', '0.11.1' ]
+28 silly lockFile 4466a206-forever-0-11-1 forever@0.11.1
+29 verbose lock forever@0.11.1 C:\Users\c.durbin\AppData\Roaming\npm-cache\4466a206-forever-0-11-1.lock
+30 silly lockFile 10f1a948-s-org-forever-forever-0-11-1-tgz https://registry.npmjs.org/forever/-/forever-0.11.1.tgz
+31 verbose lock https://registry.npmjs.org/forever/-/forever-0.11.1.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\10f1a948-s-org-forever-forever-0-11-1-tgz.lock
+32 verbose addRemoteTarball [ 'https://registry.npmjs.org/forever/-/forever-0.11.1.tgz',
+32 verbose addRemoteTarball   '50ac8744c0a6e0c266524c4746397f74d6b09c5b' ]
+33 info retry fetch attempt 1 at 10:31:19
+34 verbose fetch to= C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279443-0.9518176361452788\tmp.tgz
+35 http GET https://registry.npmjs.org/forever/-/forever-0.11.1.tgz
+36 http 200 https://registry.npmjs.org/forever/-/forever-0.11.1.tgz
+37 verbose tar unpack C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279443-0.9518176361452788\tmp.tgz
+38 silly lockFile 3d235935-npm-cache-forever-0-11-1-package tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\forever\0.11.1\package
+39 verbose lock tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\forever\0.11.1\package C:\Users\c.durbin\AppData\Roaming\npm-cache\3d235935-npm-cache-forever-0-11-1-package.lock
+40 silly lockFile 7a7bef06-79443-0-9518176361452788-tmp-tgz tar://C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279443-0.9518176361452788\tmp.tgz
+41 verbose lock tar://C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279443-0.9518176361452788\tmp.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\7a7bef06-79443-0-9518176361452788-tmp-tgz.lock
+42 silly gunzTarPerm modes [ '755', '644' ]
+43 silly gunzTarPerm extractEntry package.json
+44 silly gunzTarPerm extractEntry .npmignore
+45 silly gunzTarPerm extractEntry README.md
+46 silly gunzTarPerm extractEntry LICENSE
+47 silly gunzTarPerm extractEntry .travis.yml
+48 silly gunzTarPerm extractEntry bin/forever
+49 silly gunzTarPerm extractEntry bin/foreverd
+50 silly gunzTarPerm extractEntry bin/monitor
+51 silly gunzTarPerm extractEntry lib/forever.js
+52 silly gunzTarPerm extractEntry lib/forever/cli.js
+53 silly gunzTarPerm extractEntry lib/forever/worker.js
+54 silly gunzTarPerm extractEntry lib/forever/service/cli.js
+55 silly gunzTarPerm extractEntry lib/forever/service/index.js
+56 silly gunzTarPerm extractEntry lib/forever/service/service.js
+57 silly gunzTarPerm extractEntry lib/forever/service/adapters/adapter.js
+58 silly gunzTarPerm extractEntry lib/forever/service/adapters/initd/index.js
+59 silly gunzTarPerm extractEntry lib/forever/service/adapters/systemv/index.js
+60 silly gunzTarPerm extractEntry lib/forever/service/adapters/systemv/foreverd
+61 silly gunzTarPerm extractEntry test/cli-test
+62 silly gunzTarPerm extractEntry test/core/tail-stopall-test.js
+63 silly gunzTarPerm extractEntry test/fixtures/log-on-interval.js
+64 silly gunzTarPerm extractEntry test/fixtures/server.js
+65 silly gunzTarPerm extractEntry test/fixtures/start-daemon.js
+66 silly gunzTarPerm extractEntry test/helpers/macros.js
+67 silly gunzTarPerm extractEntry test/helpers/mocks/child-process.js
+68 silly gunzTarPerm extractEntry test/helpers/mocks/monitor.js
+69 silly gunzTarPerm extractEntry test/helpers/mocks/stream.js
+70 silly gunzTarPerm extractEntry test/service/simple-test.js
+71 silly gunzTarPerm extractEntry test/worker/multiple-workers-test.js
+72 silly gunzTarPerm extractEntry test/worker/simple-test.js
+73 silly lockFile 3d235935-npm-cache-forever-0-11-1-package tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\forever\0.11.1\package
+74 silly lockFile 3d235935-npm-cache-forever-0-11-1-package tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\forever\0.11.1\package
+75 silly lockFile 7a7bef06-79443-0-9518176361452788-tmp-tgz tar://C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279443-0.9518176361452788\tmp.tgz
+76 silly lockFile 7a7bef06-79443-0-9518176361452788-tmp-tgz tar://C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279443-0.9518176361452788\tmp.tgz
+77 silly lockFile 10f1a948-s-org-forever-forever-0-11-1-tgz https://registry.npmjs.org/forever/-/forever-0.11.1.tgz
+78 silly lockFile 10f1a948-s-org-forever-forever-0-11-1-tgz https://registry.npmjs.org/forever/-/forever-0.11.1.tgz
+79 silly lockFile 4466a206-forever-0-11-1 forever@0.11.1
+80 silly lockFile 4466a206-forever-0-11-1 forever@0.11.1
+81 silly lockFile 28ef027b-forever forever@
+82 silly lockFile 28ef027b-forever forever@
+83 silly resolved [ { name: 'forever',
+83 silly resolved     preferGlobal: 'true',
+83 silly resolved     description: 'A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)',
+83 silly resolved     version: '0.11.1',
+83 silly resolved     author: { name: 'Nodejitsu Inc.', email: 'info@nodejitsu.com' },
+83 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+83 silly resolved     repository: { type: 'git', url: 'http://github.com/nodejitsu/forever.git' },
+83 silly resolved     keywords: [ 'cli', 'fault tolerant', 'sysadmin', 'tools' ],
+83 silly resolved     dependencies:
+83 silly resolved      { colors: '~0.6.2',
+83 silly resolved        cliff: '0.1.8',
+83 silly resolved        flatiron: '~0.3.11',
+83 silly resolved        'forever-monitor': '1.2.3',
+83 silly resolved        nconf: '~0.6.9',
+83 silly resolved        nssocket: '~0.5.1',
+83 silly resolved        optimist: '~0.6.0',
+83 silly resolved        pkginfo: '0.3.0',
+83 silly resolved        timespan: '~2.3.0',
+83 silly resolved        watch: '~0.8.0',
+83 silly resolved        utile: '~0.2.1',
+83 silly resolved        winston: '~0.7.2' },
+83 silly resolved     devDependencies:
+83 silly resolved      { broadway: '0.2.x',
+83 silly resolved        eventemitter2: '0.4.x',
+83 silly resolved        request: '2.x.x',
+83 silly resolved        vows: '0.7.x' },
+83 silly resolved     bin: { forever: './bin/forever', foreverd: './bin/foreverd' },
+83 silly resolved     main: './lib/forever',
+83 silly resolved     scripts: { test: 'vows test/**/*-test.js --spec -i' },
+83 silly resolved     engines: { node: '>= 0.8.x' },
+83 silly resolved     readme: '# forever [![Build Status](https://secure.travis-ci.org/nodejitsu/forever.png)](http://travis-ci.org/nodejitsu/forever)\n\nA simple CLI tool for ensuring that a given script runs continuously (i.e. forever).\n\n## Installation\n\n``` bash\n  $ [sudo] npm install forever -g\n```\n\n**Note:** If you are using forever _programatically_ you should install [forever-monitor][0].\n\n``` bash\n  $ cd /path/to/your/project\n  $ [sudo] npm install forever-monitor\n```\n\n## Usage\nThere are two distinct ways to use forever: through the command line interface, or by requiring the forever module in your own code. **Note:** If you are using forever _programatically_ you should install [forever-monitor][0].\n\n### Using forever from the command line\nYou can use forever to run any kind of script continuously (whether it is written in node.js or not). The usage options are simple:\n\n```\n  $ forever --help\n  usage: forever [action] [options] SCRIPT [script-options]\n\n  Monitors the script specified in the current process or as a daemon\n\n  actions:\n    start               Start SCRIPT as a daemon\n    stop                Stop the daemon SCRIPT\n    stopall             Stop all running forever scripts\n    restart             Restart the daemon SCRIPT\n    restartall          Restart all running forever scripts\n    list                List all running forever scripts\n    config              Lists all forever user configuration\n    set <key> <val>     Sets the specified forever config <key>\n    clear <key>         Clears the specified forever config <key>\n    logs                Lists log files for all forever processes\n    logs <script|index> Tails the logs for <script|index>\n    columns add <col>   Adds the specified column to the output in `forever list`\n    columns rm <col>    Removed the specified column from the output in `forever list`\n    columns set <cols>  Set all columns for the output in `forever list`\n    cleanlogs           [CAREFUL] Deletes all historical forever log files\n\n  options:\n    -m  MAX          Only run the specified script MAX times\n    -l  LOGFILE      Logs the forever output to LOGFILE\n    -o  OUTFILE      Logs stdout from child script to OUTFILE\n    -e  ERRFILE      Logs stderr from child script to ERRFILE\n    -p  PATH         Base path for all forever related files (pid files, etc.)\n    -c  COMMAND      COMMAND to execute (defaults to node)\n    -a, --append     Append logs\n    -f, --fifo       Stream logs to stdout\n    -n, --number     Number of log lines to print\n    --pidFile        The pid file\n    --sourceDir      The source directory for which SCRIPT is relative to\n    --minUptime      Minimum uptime (millis) for a script to not be considered "spinning"\n    --spinSleepTime  Time to wait (millis) between launches of a spinning script.\n    --colors         --no-colors will disable output coloring\n    --plain          Disable command line colors\n    -d, --debug      Forces forever to log debug output\n    -v, --verbose    Turns on the verbose messages from Forever\n    -s, --silent     Run the child script silencing stdout and stderr\n    -w, --watch      Watch for file changes\n    --watchDirectory Top-level directory to watch from\n    --watchIgnore    To ignore pattern when watch is enabled (multiple option is allowed)\n    --killSignal     Support exit signal customization (default is SIGKILL), \n                     used for restarting script gracefully eg. --killSignal=SIGTERM\n    -h, --help       You\'re staring at it\n\n  [Long Running Process]\n    The forever process will continue to run outputting log messages to the console.\n    ex. forever -o out.log -e err.log my-script.js\n\n  [Daemon]\n    The forever process will run as a daemon which will make the target process start\n    in the background. This is extremely useful for remote starting simple node.js scripts\n    without using nohup. It is recommended to run start with -o -l, & -e.\n    ex. forever start -l forever.log -o out.log -e err.log my-daemon.js\n        forever stop my-daemon.js\n```\n\nThere are [several examples][1] designed to test the fault tolerance of forever. Here\'s a simple usage example:\n\n``` bash\n  $ forever -m 5 examples/error-on-timer.js\n```\n\n## Using forever module from node.js\nIn addition to using a Forever object, the forever module also exposes some useful methods. Each method returns an instance of an EventEmitter which emits when complete. See the [forever cli commands][2] for sample usage.\n\n**Remark:** As of `forever@0.6.0` processes will not automatically be available in `forever.list()`. In order to get your processes into `forever.list()` or `forever list` you must instantiate the `forever` socket server:\n\n``` js\n  forever.startServer(child);\n```\n\n### forever.load (config)\n_Synchronously_ sets the specified configuration (config) for the forever module. There are two important options:\n\n* root:    Directory to put all default forever log files\n* pidPath: Directory to put all forever *.pid files\n\n### forever.start (file, options)\nStarts a script with forever.\n\n### forever.startDaemon (file, options)\nStarts a script with forever as a daemon. WARNING: Will daemonize the current process.\n\n### forever.stop (index)\nStops the forever daemon script at the specified index. These indices are the same as those returned by forever.list(). This method returns an EventEmitter that raises the \'stop\' event when complete.\n\n### forever.stopAll (format)\nStops all forever scripts currently running. This method returns an EventEmitter that raises the \'stopAll\' event when complete.\n\n### forever.list (format, callback)\nReturns a list of metadata objects about each process that is being run using forever. This method is synchronous and will return the list of metadata as such. Only processes which have invoked `forever.startServer()` will be available from `forever.list()`\n\n### forever.tail (target, options, callback)\nResponds with the logs from the target script(s) from `tail`. There are two important options:\n\n* `length` (numeric): is is used as the `-n` parameter to `tail`.\n* `stream` (boolean): is is used as the `-f` parameter to `tail`.\n\n### forever.cleanUp ()\nCleans up any extraneous forever *.pid files that are on the target system. This method returns an EventEmitter that raises the \'cleanUp\' event when complete.\n\n### forever.cleanLogsSync (processes)\nRemoves all log files from the root forever directory that do not belong to current running forever processes.\n\n## Run Tests\n\n``` bash\n  $ npm test\n```\n\n#### License: MIT\n#### Author: [Charlie Robbins](http://github.com/indexzero)\n#### Contributors: [Fedor Indutny](http://github.com/indutny), [James Halliday](http://substack.net/), [Charlie McConnell](http://github.com/avianflu), [Maciej Malecki](http://github.com/mmalecki), [John Lancaster](http://jlank.com)\n\n[0]: http://github.com/nodejitsu/forever-monitor\n[1]: http://github.com/nodejitsu/forever-monitor/tree/master/examples\n[2]: https://github.com/nodejitsu/forever/blob/master/lib/forever/cli.js\n',
+83 silly resolved     readmeFilename: 'README.md',
+83 silly resolved     bugs: { url: 'https://github.com/nodejitsu/forever/issues' },
+83 silly resolved     homepage: 'https://github.com/nodejitsu/forever',
+83 silly resolved     _id: 'forever@0.11.1',
+83 silly resolved     _shasum: '50ac8744c0a6e0c266524c4746397f74d6b09c5b',
+83 silly resolved     _from: 'forever@',
+83 silly resolved     _resolved: 'https://registry.npmjs.org/forever/-/forever-0.11.1.tgz' } ]
+84 info install forever@0.11.1 into C:\Users\c.durbin\AppData\Roaming\npm
+85 info installOne forever@0.11.1
+86 info C:\Users\c.durbin\AppData\Roaming\npm\node_modules\forever unbuild
+87 verbose tar unpack C:\Users\c.durbin\AppData\Roaming\npm-cache\forever\0.11.1\package.tgz
+88 silly lockFile 1acb99ad-Roaming-npm-node-modules-forever tar://C:\Users\c.durbin\AppData\Roaming\npm\node_modules\forever
+89 verbose lock tar://C:\Users\c.durbin\AppData\Roaming\npm\node_modules\forever C:\Users\c.durbin\AppData\Roaming\npm-cache\1acb99ad-Roaming-npm-node-modules-forever.lock
+90 silly lockFile 2b37f0ee-cache-forever-0-11-1-package-tgz tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\forever\0.11.1\package.tgz
+91 verbose lock tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\forever\0.11.1\package.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\2b37f0ee-cache-forever-0-11-1-package-tgz.lock
+92 silly gunzTarPerm modes [ '755', '644' ]
+93 silly gunzTarPerm extractEntry package.json
+94 silly gunzTarPerm extractEntry .npmignore
+95 silly gunzTarPerm extractEntry README.md
+96 silly gunzTarPerm extractEntry LICENSE
+97 silly gunzTarPerm extractEntry .travis.yml
+98 silly gunzTarPerm extractEntry bin/forever
+99 silly gunzTarPerm extractEntry bin/foreverd
+100 silly gunzTarPerm extractEntry bin/monitor
+101 silly gunzTarPerm extractEntry lib/forever.js
+102 silly gunzTarPerm extractEntry lib/forever/cli.js
+103 silly gunzTarPerm extractEntry lib/forever/worker.js
+104 silly gunzTarPerm extractEntry lib/forever/service/cli.js
+105 silly gunzTarPerm extractEntry lib/forever/service/index.js
+106 silly gunzTarPerm extractEntry lib/forever/service/service.js
+107 silly gunzTarPerm extractEntry lib/forever/service/adapters/adapter.js
+108 silly gunzTarPerm extractEntry lib/forever/service/adapters/initd/index.js
+109 silly gunzTarPerm extractEntry lib/forever/service/adapters/systemv/index.js
+110 silly gunzTarPerm extractEntry lib/forever/service/adapters/systemv/foreverd
+111 silly gunzTarPerm extractEntry test/cli-test
+112 silly gunzTarPerm extractEntry test/core/tail-stopall-test.js
+113 silly gunzTarPerm extractEntry test/fixtures/log-on-interval.js
+114 silly gunzTarPerm extractEntry test/fixtures/server.js
+115 silly gunzTarPerm extractEntry test/fixtures/start-daemon.js
+116 silly gunzTarPerm extractEntry test/helpers/macros.js
+117 silly gunzTarPerm extractEntry test/helpers/mocks/child-process.js
+118 silly gunzTarPerm extractEntry test/helpers/mocks/monitor.js
+119 silly gunzTarPerm extractEntry test/helpers/mocks/stream.js
+120 silly gunzTarPerm extractEntry test/service/simple-test.js
+121 silly gunzTarPerm extractEntry test/worker/multiple-workers-test.js
+122 silly gunzTarPerm extractEntry test/worker/simple-test.js
+123 silly lockFile 1acb99ad-Roaming-npm-node-modules-forever tar://C:\Users\c.durbin\AppData\Roaming\npm\node_modules\forever
+124 silly lockFile 1acb99ad-Roaming-npm-node-modules-forever tar://C:\Users\c.durbin\AppData\Roaming\npm\node_modules\forever
+125 silly lockFile 2b37f0ee-cache-forever-0-11-1-package-tgz tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\forever\0.11.1\package.tgz
+126 silly lockFile 2b37f0ee-cache-forever-0-11-1-package-tgz tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\forever\0.11.1\package.tgz
+127 info preinstall forever@0.11.1
+128 verbose readDependencies using package.json deps
+129 verbose readDependencies using package.json deps
+130 verbose cache add [ 'colors@~0.6.2', null ]
+131 verbose cache add name=undefined spec="colors@~0.6.2" args=["colors@~0.6.2",null]
+132 verbose parsed url { protocol: null,
+132 verbose parsed url   slashes: null,
+132 verbose parsed url   auth: null,
+132 verbose parsed url   host: null,
+132 verbose parsed url   port: null,
+132 verbose parsed url   hostname: null,
+132 verbose parsed url   hash: null,
+132 verbose parsed url   search: null,
+132 verbose parsed url   query: null,
+132 verbose parsed url   pathname: 'colors@~0.6.2',
+132 verbose parsed url   path: 'colors@~0.6.2',
+132 verbose parsed url   href: 'colors@~0.6.2' }
+133 verbose cache add name="colors" spec="~0.6.2" args=["colors","~0.6.2"]
+134 verbose parsed url { protocol: null,
+134 verbose parsed url   slashes: null,
+134 verbose parsed url   auth: null,
+134 verbose parsed url   host: null,
+134 verbose parsed url   port: null,
+134 verbose parsed url   hostname: null,
+134 verbose parsed url   hash: null,
+134 verbose parsed url   search: null,
+134 verbose parsed url   query: null,
+134 verbose parsed url   pathname: '~0.6.2',
+134 verbose parsed url   path: '~0.6.2',
+134 verbose parsed url   href: '~0.6.2' }
+135 verbose addNamed [ 'colors', '~0.6.2' ]
+136 verbose addNamed [ null, '>=0.6.2-0 <0.7.0-0' ]
+137 silly lockFile f2380b4d-colors-0-6-2 colors@~0.6.2
+138 verbose lock colors@~0.6.2 C:\Users\c.durbin\AppData\Roaming\npm-cache\f2380b4d-colors-0-6-2.lock
+139 verbose cache add [ 'cliff@0.1.8', null ]
+140 verbose cache add name=undefined spec="cliff@0.1.8" args=["cliff@0.1.8",null]
+141 verbose parsed url { protocol: null,
+141 verbose parsed url   slashes: null,
+141 verbose parsed url   auth: null,
+141 verbose parsed url   host: null,
+141 verbose parsed url   port: null,
+141 verbose parsed url   hostname: null,
+141 verbose parsed url   hash: null,
+141 verbose parsed url   search: null,
+141 verbose parsed url   query: null,
+141 verbose parsed url   pathname: 'cliff@0.1.8',
+141 verbose parsed url   path: 'cliff@0.1.8',
+141 verbose parsed url   href: 'cliff@0.1.8' }
+142 verbose cache add name="cliff" spec="0.1.8" args=["cliff","0.1.8"]
+143 verbose parsed url { protocol: null,
+143 verbose parsed url   slashes: null,
+143 verbose parsed url   auth: null,
+143 verbose parsed url   host: null,
+143 verbose parsed url   port: null,
+143 verbose parsed url   hostname: null,
+143 verbose parsed url   hash: null,
+143 verbose parsed url   search: null,
+143 verbose parsed url   query: null,
+143 verbose parsed url   pathname: '0.1.8',
+143 verbose parsed url   path: '0.1.8',
+143 verbose parsed url   href: '0.1.8' }
+144 verbose addNamed [ 'cliff', '0.1.8' ]
+145 verbose addNamed [ '0.1.8', '0.1.8' ]
+146 silly lockFile a0c35da7-cliff-0-1-8 cliff@0.1.8
+147 verbose lock cliff@0.1.8 C:\Users\c.durbin\AppData\Roaming\npm-cache\a0c35da7-cliff-0-1-8.lock
+148 verbose cache add [ 'flatiron@~0.3.11', null ]
+149 verbose cache add name=undefined spec="flatiron@~0.3.11" args=["flatiron@~0.3.11",null]
+150 verbose parsed url { protocol: null,
+150 verbose parsed url   slashes: null,
+150 verbose parsed url   auth: null,
+150 verbose parsed url   host: null,
+150 verbose parsed url   port: null,
+150 verbose parsed url   hostname: null,
+150 verbose parsed url   hash: null,
+150 verbose parsed url   search: null,
+150 verbose parsed url   query: null,
+150 verbose parsed url   pathname: 'flatiron@~0.3.11',
+150 verbose parsed url   path: 'flatiron@~0.3.11',
+150 verbose parsed url   href: 'flatiron@~0.3.11' }
+151 verbose cache add name="flatiron" spec="~0.3.11" args=["flatiron","~0.3.11"]
+152 verbose parsed url { protocol: null,
+152 verbose parsed url   slashes: null,
+152 verbose parsed url   auth: null,
+152 verbose parsed url   host: null,
+152 verbose parsed url   port: null,
+152 verbose parsed url   hostname: null,
+152 verbose parsed url   hash: null,
+152 verbose parsed url   search: null,
+152 verbose parsed url   query: null,
+152 verbose parsed url   pathname: '~0.3.11',
+152 verbose parsed url   path: '~0.3.11',
+152 verbose parsed url   href: '~0.3.11' }
+153 verbose addNamed [ 'flatiron', '~0.3.11' ]
+154 verbose addNamed [ null, '>=0.3.11-0 <0.4.0-0' ]
+155 silly lockFile 99676c21-flatiron-0-3-11 flatiron@~0.3.11
+156 verbose lock flatiron@~0.3.11 C:\Users\c.durbin\AppData\Roaming\npm-cache\99676c21-flatiron-0-3-11.lock
+157 verbose cache add [ 'forever-monitor@1.2.3', null ]
+158 verbose cache add name=undefined spec="forever-monitor@1.2.3" args=["forever-monitor@1.2.3",null]
+159 verbose parsed url { protocol: null,
+159 verbose parsed url   slashes: null,
+159 verbose parsed url   auth: null,
+159 verbose parsed url   host: null,
+159 verbose parsed url   port: null,
+159 verbose parsed url   hostname: null,
+159 verbose parsed url   hash: null,
+159 verbose parsed url   search: null,
+159 verbose parsed url   query: null,
+159 verbose parsed url   pathname: 'forever-monitor@1.2.3',
+159 verbose parsed url   path: 'forever-monitor@1.2.3',
+159 verbose parsed url   href: 'forever-monitor@1.2.3' }
+160 verbose cache add name="forever-monitor" spec="1.2.3" args=["forever-monitor","1.2.3"]
+161 verbose parsed url { protocol: null,
+161 verbose parsed url   slashes: null,
+161 verbose parsed url   auth: null,
+161 verbose parsed url   host: null,
+161 verbose parsed url   port: null,
+161 verbose parsed url   hostname: null,
+161 verbose parsed url   hash: null,
+161 verbose parsed url   search: null,
+161 verbose parsed url   query: null,
+161 verbose parsed url   pathname: '1.2.3',
+161 verbose parsed url   path: '1.2.3',
+161 verbose parsed url   href: '1.2.3' }
+162 verbose addNamed [ 'forever-monitor', '1.2.3' ]
+163 verbose addNamed [ '1.2.3', '1.2.3' ]
+164 silly lockFile 355c84e8-forever-monitor-1-2-3 forever-monitor@1.2.3
+165 verbose lock forever-monitor@1.2.3 C:\Users\c.durbin\AppData\Roaming\npm-cache\355c84e8-forever-monitor-1-2-3.lock
+166 verbose cache add [ 'nconf@~0.6.9', null ]
+167 verbose cache add name=undefined spec="nconf@~0.6.9" args=["nconf@~0.6.9",null]
+168 verbose parsed url { protocol: null,
+168 verbose parsed url   slashes: null,
+168 verbose parsed url   auth: null,
+168 verbose parsed url   host: null,
+168 verbose parsed url   port: null,
+168 verbose parsed url   hostname: null,
+168 verbose parsed url   hash: null,
+168 verbose parsed url   search: null,
+168 verbose parsed url   query: null,
+168 verbose parsed url   pathname: 'nconf@~0.6.9',
+168 verbose parsed url   path: 'nconf@~0.6.9',
+168 verbose parsed url   href: 'nconf@~0.6.9' }
+169 verbose cache add name="nconf" spec="~0.6.9" args=["nconf","~0.6.9"]
+170 verbose parsed url { protocol: null,
+170 verbose parsed url   slashes: null,
+170 verbose parsed url   auth: null,
+170 verbose parsed url   host: null,
+170 verbose parsed url   port: null,
+170 verbose parsed url   hostname: null,
+170 verbose parsed url   hash: null,
+170 verbose parsed url   search: null,
+170 verbose parsed url   query: null,
+170 verbose parsed url   pathname: '~0.6.9',
+170 verbose parsed url   path: '~0.6.9',
+170 verbose parsed url   href: '~0.6.9' }
+171 verbose addNamed [ 'nconf', '~0.6.9' ]
+172 verbose addNamed [ null, '>=0.6.9-0 <0.7.0-0' ]
+173 silly lockFile eb32f077-nconf-0-6-9 nconf@~0.6.9
+174 verbose lock nconf@~0.6.9 C:\Users\c.durbin\AppData\Roaming\npm-cache\eb32f077-nconf-0-6-9.lock
+175 verbose cache add [ 'nssocket@~0.5.1', null ]
+176 verbose cache add name=undefined spec="nssocket@~0.5.1" args=["nssocket@~0.5.1",null]
+177 verbose parsed url { protocol: null,
+177 verbose parsed url   slashes: null,
+177 verbose parsed url   auth: null,
+177 verbose parsed url   host: null,
+177 verbose parsed url   port: null,
+177 verbose parsed url   hostname: null,
+177 verbose parsed url   hash: null,
+177 verbose parsed url   search: null,
+177 verbose parsed url   query: null,
+177 verbose parsed url   pathname: 'nssocket@~0.5.1',
+177 verbose parsed url   path: 'nssocket@~0.5.1',
+177 verbose parsed url   href: 'nssocket@~0.5.1' }
+178 verbose cache add name="nssocket" spec="~0.5.1" args=["nssocket","~0.5.1"]
+179 verbose parsed url { protocol: null,
+179 verbose parsed url   slashes: null,
+179 verbose parsed url   auth: null,
+179 verbose parsed url   host: null,
+179 verbose parsed url   port: null,
+179 verbose parsed url   hostname: null,
+179 verbose parsed url   hash: null,
+179 verbose parsed url   search: null,
+179 verbose parsed url   query: null,
+179 verbose parsed url   pathname: '~0.5.1',
+179 verbose parsed url   path: '~0.5.1',
+179 verbose parsed url   href: '~0.5.1' }
+180 verbose addNamed [ 'nssocket', '~0.5.1' ]
+181 verbose addNamed [ null, '>=0.5.1-0 <0.6.0-0' ]
+182 silly lockFile 936c2de0-nssocket-0-5-1 nssocket@~0.5.1
+183 verbose lock nssocket@~0.5.1 C:\Users\c.durbin\AppData\Roaming\npm-cache\936c2de0-nssocket-0-5-1.lock
+184 verbose cache add [ 'optimist@~0.6.0', null ]
+185 verbose cache add name=undefined spec="optimist@~0.6.0" args=["optimist@~0.6.0",null]
+186 verbose parsed url { protocol: null,
+186 verbose parsed url   slashes: null,
+186 verbose parsed url   auth: null,
+186 verbose parsed url   host: null,
+186 verbose parsed url   port: null,
+186 verbose parsed url   hostname: null,
+186 verbose parsed url   hash: null,
+186 verbose parsed url   search: null,
+186 verbose parsed url   query: null,
+186 verbose parsed url   pathname: 'optimist@~0.6.0',
+186 verbose parsed url   path: 'optimist@~0.6.0',
+186 verbose parsed url   href: 'optimist@~0.6.0' }
+187 verbose cache add name="optimist" spec="~0.6.0" args=["optimist","~0.6.0"]
+188 verbose parsed url { protocol: null,
+188 verbose parsed url   slashes: null,
+188 verbose parsed url   auth: null,
+188 verbose parsed url   host: null,
+188 verbose parsed url   port: null,
+188 verbose parsed url   hostname: null,
+188 verbose parsed url   hash: null,
+188 verbose parsed url   search: null,
+188 verbose parsed url   query: null,
+188 verbose parsed url   pathname: '~0.6.0',
+188 verbose parsed url   path: '~0.6.0',
+188 verbose parsed url   href: '~0.6.0' }
+189 verbose addNamed [ 'optimist', '~0.6.0' ]
+190 verbose addNamed [ null, '>=0.6.0-0 <0.7.0-0' ]
+191 silly lockFile 07193858-optimist-0-6-0 optimist@~0.6.0
+192 verbose lock optimist@~0.6.0 C:\Users\c.durbin\AppData\Roaming\npm-cache\07193858-optimist-0-6-0.lock
+193 verbose cache add [ 'pkginfo@0.3.0', null ]
+194 verbose cache add name=undefined spec="pkginfo@0.3.0" args=["pkginfo@0.3.0",null]
+195 verbose parsed url { protocol: null,
+195 verbose parsed url   slashes: null,
+195 verbose parsed url   auth: null,
+195 verbose parsed url   host: null,
+195 verbose parsed url   port: null,
+195 verbose parsed url   hostname: null,
+195 verbose parsed url   hash: null,
+195 verbose parsed url   search: null,
+195 verbose parsed url   query: null,
+195 verbose parsed url   pathname: 'pkginfo@0.3.0',
+195 verbose parsed url   path: 'pkginfo@0.3.0',
+195 verbose parsed url   href: 'pkginfo@0.3.0' }
+196 verbose cache add name="pkginfo" spec="0.3.0" args=["pkginfo","0.3.0"]
+197 verbose parsed url { protocol: null,
+197 verbose parsed url   slashes: null,
+197 verbose parsed url   auth: null,
+197 verbose parsed url   host: null,
+197 verbose parsed url   port: null,
+197 verbose parsed url   hostname: null,
+197 verbose parsed url   hash: null,
+197 verbose parsed url   search: null,
+197 verbose parsed url   query: null,
+197 verbose parsed url   pathname: '0.3.0',
+197 verbose parsed url   path: '0.3.0',
+197 verbose parsed url   href: '0.3.0' }
+198 verbose addNamed [ 'pkginfo', '0.3.0' ]
+199 verbose addNamed [ '0.3.0', '0.3.0' ]
+200 silly lockFile c6150d55-pkginfo-0-3-0 pkginfo@0.3.0
+201 verbose lock pkginfo@0.3.0 C:\Users\c.durbin\AppData\Roaming\npm-cache\c6150d55-pkginfo-0-3-0.lock
+202 verbose cache add [ 'timespan@~2.3.0', null ]
+203 verbose cache add name=undefined spec="timespan@~2.3.0" args=["timespan@~2.3.0",null]
+204 verbose parsed url { protocol: null,
+204 verbose parsed url   slashes: null,
+204 verbose parsed url   auth: null,
+204 verbose parsed url   host: null,
+204 verbose parsed url   port: null,
+204 verbose parsed url   hostname: null,
+204 verbose parsed url   hash: null,
+204 verbose parsed url   search: null,
+204 verbose parsed url   query: null,
+204 verbose parsed url   pathname: 'timespan@~2.3.0',
+204 verbose parsed url   path: 'timespan@~2.3.0',
+204 verbose parsed url   href: 'timespan@~2.3.0' }
+205 verbose cache add name="timespan" spec="~2.3.0" args=["timespan","~2.3.0"]
+206 verbose parsed url { protocol: null,
+206 verbose parsed url   slashes: null,
+206 verbose parsed url   auth: null,
+206 verbose parsed url   host: null,
+206 verbose parsed url   port: null,
+206 verbose parsed url   hostname: null,
+206 verbose parsed url   hash: null,
+206 verbose parsed url   search: null,
+206 verbose parsed url   query: null,
+206 verbose parsed url   pathname: '~2.3.0',
+206 verbose parsed url   path: '~2.3.0',
+206 verbose parsed url   href: '~2.3.0' }
+207 verbose addNamed [ 'timespan', '~2.3.0' ]
+208 verbose addNamed [ null, '>=2.3.0-0 <2.4.0-0' ]
+209 silly lockFile 572eaef7-timespan-2-3-0 timespan@~2.3.0
+210 verbose lock timespan@~2.3.0 C:\Users\c.durbin\AppData\Roaming\npm-cache\572eaef7-timespan-2-3-0.lock
+211 verbose cache add [ 'watch@~0.8.0', null ]
+212 verbose cache add name=undefined spec="watch@~0.8.0" args=["watch@~0.8.0",null]
+213 verbose parsed url { protocol: null,
+213 verbose parsed url   slashes: null,
+213 verbose parsed url   auth: null,
+213 verbose parsed url   host: null,
+213 verbose parsed url   port: null,
+213 verbose parsed url   hostname: null,
+213 verbose parsed url   hash: null,
+213 verbose parsed url   search: null,
+213 verbose parsed url   query: null,
+213 verbose parsed url   pathname: 'watch@~0.8.0',
+213 verbose parsed url   path: 'watch@~0.8.0',
+213 verbose parsed url   href: 'watch@~0.8.0' }
+214 verbose cache add name="watch" spec="~0.8.0" args=["watch","~0.8.0"]
+215 verbose parsed url { protocol: null,
+215 verbose parsed url   slashes: null,
+215 verbose parsed url   auth: null,
+215 verbose parsed url   host: null,
+215 verbose parsed url   port: null,
+215 verbose parsed url   hostname: null,
+215 verbose parsed url   hash: null,
+215 verbose parsed url   search: null,
+215 verbose parsed url   query: null,
+215 verbose parsed url   pathname: '~0.8.0',
+215 verbose parsed url   path: '~0.8.0',
+215 verbose parsed url   href: '~0.8.0' }
+216 verbose addNamed [ 'watch', '~0.8.0' ]
+217 verbose addNamed [ null, '>=0.8.0-0 <0.9.0-0' ]
+218 silly lockFile ecc5b56d-watch-0-8-0 watch@~0.8.0
+219 verbose lock watch@~0.8.0 C:\Users\c.durbin\AppData\Roaming\npm-cache\ecc5b56d-watch-0-8-0.lock
+220 verbose cache add [ 'utile@~0.2.1', null ]
+221 verbose cache add name=undefined spec="utile@~0.2.1" args=["utile@~0.2.1",null]
+222 verbose parsed url { protocol: null,
+222 verbose parsed url   slashes: null,
+222 verbose parsed url   auth: null,
+222 verbose parsed url   host: null,
+222 verbose parsed url   port: null,
+222 verbose parsed url   hostname: null,
+222 verbose parsed url   hash: null,
+222 verbose parsed url   search: null,
+222 verbose parsed url   query: null,
+222 verbose parsed url   pathname: 'utile@~0.2.1',
+222 verbose parsed url   path: 'utile@~0.2.1',
+222 verbose parsed url   href: 'utile@~0.2.1' }
+223 verbose cache add name="utile" spec="~0.2.1" args=["utile","~0.2.1"]
+224 verbose parsed url { protocol: null,
+224 verbose parsed url   slashes: null,
+224 verbose parsed url   auth: null,
+224 verbose parsed url   host: null,
+224 verbose parsed url   port: null,
+224 verbose parsed url   hostname: null,
+224 verbose parsed url   hash: null,
+224 verbose parsed url   search: null,
+224 verbose parsed url   query: null,
+224 verbose parsed url   pathname: '~0.2.1',
+224 verbose parsed url   path: '~0.2.1',
+224 verbose parsed url   href: '~0.2.1' }
+225 verbose addNamed [ 'utile', '~0.2.1' ]
+226 verbose addNamed [ null, '>=0.2.1-0 <0.3.0-0' ]
+227 silly lockFile 642d3b0d-utile-0-2-1 utile@~0.2.1
+228 verbose lock utile@~0.2.1 C:\Users\c.durbin\AppData\Roaming\npm-cache\642d3b0d-utile-0-2-1.lock
+229 verbose cache add [ 'winston@~0.7.2', null ]
+230 verbose cache add name=undefined spec="winston@~0.7.2" args=["winston@~0.7.2",null]
+231 verbose parsed url { protocol: null,
+231 verbose parsed url   slashes: null,
+231 verbose parsed url   auth: null,
+231 verbose parsed url   host: null,
+231 verbose parsed url   port: null,
+231 verbose parsed url   hostname: null,
+231 verbose parsed url   hash: null,
+231 verbose parsed url   search: null,
+231 verbose parsed url   query: null,
+231 verbose parsed url   pathname: 'winston@~0.7.2',
+231 verbose parsed url   path: 'winston@~0.7.2',
+231 verbose parsed url   href: 'winston@~0.7.2' }
+232 verbose cache add name="winston" spec="~0.7.2" args=["winston","~0.7.2"]
+233 verbose parsed url { protocol: null,
+233 verbose parsed url   slashes: null,
+233 verbose parsed url   auth: null,
+233 verbose parsed url   host: null,
+233 verbose parsed url   port: null,
+233 verbose parsed url   hostname: null,
+233 verbose parsed url   hash: null,
+233 verbose parsed url   search: null,
+233 verbose parsed url   query: null,
+233 verbose parsed url   pathname: '~0.7.2',
+233 verbose parsed url   path: '~0.7.2',
+233 verbose parsed url   href: '~0.7.2' }
+234 verbose addNamed [ 'winston', '~0.7.2' ]
+235 verbose addNamed [ null, '>=0.7.2-0 <0.8.0-0' ]
+236 silly lockFile f6c20987-winston-0-7-2 winston@~0.7.2
+237 verbose lock winston@~0.7.2 C:\Users\c.durbin\AppData\Roaming\npm-cache\f6c20987-winston-0-7-2.lock
+238 silly addNameRange { name: 'colors', range: '>=0.6.2-0 <0.7.0-0', hasData: false }
+239 silly addNameRange { name: 'flatiron',
+239 silly addNameRange   range: '>=0.3.11-0 <0.4.0-0',
+239 silly addNameRange   hasData: false }
+240 silly addNameRange { name: 'nconf', range: '>=0.6.9-0 <0.7.0-0', hasData: false }
+241 silly addNameRange { name: 'nssocket', range: '>=0.5.1-0 <0.6.0-0', hasData: false }
+242 silly addNameRange { name: 'optimist', range: '>=0.6.0-0 <0.7.0-0', hasData: false }
+243 silly addNameRange { name: 'timespan', range: '>=2.3.0-0 <2.4.0-0', hasData: false }
+244 silly addNameRange { name: 'watch', range: '>=0.8.0-0 <0.9.0-0', hasData: false }
+245 silly addNameRange { name: 'utile', range: '>=0.2.1-0 <0.3.0-0', hasData: false }
+246 silly addNameRange { name: 'winston', range: '>=0.7.2-0 <0.8.0-0', hasData: false }
+247 verbose url raw colors
+248 verbose url resolving [ 'https://registry.npmjs.org/', './colors' ]
+249 verbose url resolved https://registry.npmjs.org/colors
+250 info trying registry request attempt 1 at 10:31:19
+251 http GET https://registry.npmjs.org/colors
+252 verbose url raw cliff
+253 verbose url resolving [ 'https://registry.npmjs.org/', './cliff' ]
+254 verbose url resolved https://registry.npmjs.org/cliff
+255 info trying registry request attempt 1 at 10:31:19
+256 http GET https://registry.npmjs.org/cliff
+257 verbose url raw flatiron
+258 verbose url resolving [ 'https://registry.npmjs.org/', './flatiron' ]
+259 verbose url resolved https://registry.npmjs.org/flatiron
+260 info trying registry request attempt 1 at 10:31:19
+261 http GET https://registry.npmjs.org/flatiron
+262 verbose url raw forever-monitor
+263 verbose url resolving [ 'https://registry.npmjs.org/', './forever-monitor' ]
+264 verbose url resolved https://registry.npmjs.org/forever-monitor
+265 info trying registry request attempt 1 at 10:31:19
+266 http GET https://registry.npmjs.org/forever-monitor
+267 verbose url raw nconf
+268 verbose url resolving [ 'https://registry.npmjs.org/', './nconf' ]
+269 verbose url resolved https://registry.npmjs.org/nconf
+270 info trying registry request attempt 1 at 10:31:19
+271 http GET https://registry.npmjs.org/nconf
+272 verbose url raw nssocket
+273 verbose url resolving [ 'https://registry.npmjs.org/', './nssocket' ]
+274 verbose url resolved https://registry.npmjs.org/nssocket
+275 info trying registry request attempt 1 at 10:31:19
+276 http GET https://registry.npmjs.org/nssocket
+277 verbose url raw optimist
+278 verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+279 verbose url resolved https://registry.npmjs.org/optimist
+280 info trying registry request attempt 1 at 10:31:19
+281 http GET https://registry.npmjs.org/optimist
+282 verbose url raw timespan
+283 verbose url resolving [ 'https://registry.npmjs.org/', './timespan' ]
+284 verbose url resolved https://registry.npmjs.org/timespan
+285 info trying registry request attempt 1 at 10:31:19
+286 http GET https://registry.npmjs.org/timespan
+287 verbose url raw utile
+288 verbose url resolving [ 'https://registry.npmjs.org/', './utile' ]
+289 verbose url resolved https://registry.npmjs.org/utile
+290 info trying registry request attempt 1 at 10:31:19
+291 http GET https://registry.npmjs.org/utile
+292 verbose url raw winston
+293 verbose url resolving [ 'https://registry.npmjs.org/', './winston' ]
+294 verbose url resolved https://registry.npmjs.org/winston
+295 info trying registry request attempt 1 at 10:31:19
+296 http GET https://registry.npmjs.org/winston
+297 verbose url raw watch
+298 verbose url resolving [ 'https://registry.npmjs.org/', './watch' ]
+299 verbose url resolved https://registry.npmjs.org/watch
+300 info trying registry request attempt 1 at 10:31:19
+301 http GET https://registry.npmjs.org/watch
+302 verbose url raw pkginfo
+303 verbose url resolving [ 'https://registry.npmjs.org/', './pkginfo' ]
+304 verbose url resolved https://registry.npmjs.org/pkginfo
+305 info trying registry request attempt 1 at 10:31:19
+306 verbose etag "5D0IBLAT9MFZXBSGIBHMGPDZS"
+307 http GET https://registry.npmjs.org/pkginfo
+308 http 200 https://registry.npmjs.org/colors
+309 silly registry.get cb [ 200,
+309 silly registry.get   { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+309 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+309 silly registry.get     etag: '"78RQD6Z54D6VB1XJZ7OA9KC62"',
+309 silly registry.get     'content-type': 'application/json',
+309 silly registry.get     via: '1.1 varnish',
+309 silly registry.get     'cache-control': 'max-age=1',
+309 silly registry.get     'content-length': '8250',
+309 silly registry.get     'accept-ranges': 'bytes',
+309 silly registry.get     age: '193',
+309 silly registry.get     'x-served-by': 'cache-v41-ASH, cache-ord1723-ORD',
+309 silly registry.get     'x-cache': 'HIT, HIT',
+309 silly registry.get     'x-cache-hits': '1, 1',
+309 silly registry.get     'x-timer': 'S1401982403.652617,VS0,VE102',
+309 silly registry.get     vary: 'Accept',
+309 silly registry.get     'keep-alive': 'timeout=10, max=50',
+309 silly registry.get     connection: 'Keep-Alive' } ]
+310 silly addNameRange number 2 { name: 'colors', range: '>=0.6.2-0 <0.7.0-0', hasData: true }
+311 silly addNameRange versions [ 'colors',
+311 silly addNameRange   [ '0.3.0', '0.5.0', '0.5.1', '0.6.0', '0.6.0-1', '0.6.1', '0.6.2' ] ]
+312 verbose addNamed [ 'colors', '0.6.2' ]
+313 verbose addNamed [ '0.6.2', '0.6.2' ]
+314 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+315 verbose lock colors@0.6.2 C:\Users\c.durbin\AppData\Roaming\npm-cache\1ce149d5-colors-0-6-2.lock
+316 silly lockFile ab5efc36-pmjs-org-colors-colors-0-6-2-tgz https://registry.npmjs.org/colors/-/colors-0.6.2.tgz
+317 verbose lock https://registry.npmjs.org/colors/-/colors-0.6.2.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\ab5efc36-pmjs-org-colors-colors-0-6-2-tgz.lock
+318 verbose addRemoteTarball [ 'https://registry.npmjs.org/colors/-/colors-0.6.2.tgz',
+318 verbose addRemoteTarball   '2423fe6678ac0c5dae8852e5d0e5be08c997abcc' ]
+319 info retry fetch attempt 1 at 10:31:19
+320 verbose fetch to= C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279970-0.3636536970734596\tmp.tgz
+321 http GET https://registry.npmjs.org/colors/-/colors-0.6.2.tgz
+322 http 200 https://registry.npmjs.org/forever-monitor
+323 silly registry.get cb [ 200,
+323 silly registry.get   { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+323 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+323 silly registry.get     etag: '"C5X5B2XJ4PCKM941L8VOW0SEE"',
+323 silly registry.get     'content-type': 'application/json',
+323 silly registry.get     via: '1.1 varnish',
+323 silly registry.get     'cache-control': 'max-age=1',
+323 silly registry.get     'content-length': '17460',
+323 silly registry.get     'accept-ranges': 'bytes',
+323 silly registry.get     age: '4071',
+323 silly registry.get     'x-served-by': 'cache-v42-ASH, cache-ord1734-ORD',
+323 silly registry.get     'x-cache': 'HIT, MISS',
+323 silly registry.get     'x-cache-hits': '1, 0',
+323 silly registry.get     'x-timer': 'S1401982403.650953,VS0,VE107',
+323 silly registry.get     vary: 'Accept',
+323 silly registry.get     'keep-alive': 'timeout=10, max=50',
+323 silly registry.get     connection: 'Keep-Alive' } ]
+324 http 200 https://registry.npmjs.org/nconf
+325 silly registry.get cb [ 200,
+325 silly registry.get   { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+325 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+325 silly registry.get     etag: '"IMQOQAIITDKMCDXHNHEBKUHK"',
+325 silly registry.get     'content-type': 'application/json',
+325 silly registry.get     via: '1.1 varnish',
+325 silly registry.get     'cache-control': 'max-age=1',
+325 silly registry.get     'content-length': '30325',
+325 silly registry.get     'accept-ranges': 'bytes',
+325 silly registry.get     age: '75',
+325 silly registry.get     'x-served-by': 'cache-v41-ASH, cache-ord1731-ORD',
+325 silly registry.get     'x-cache': 'HIT, MISS',
+325 silly registry.get     'x-cache-hits': '1, 0',
+325 silly registry.get     'x-timer': 'S1401982403.651261,VS0,VE111',
+325 silly registry.get     vary: 'Accept',
+325 silly registry.get     'keep-alive': 'timeout=10, max=50',
+325 silly registry.get     connection: 'Keep-Alive' } ]
+326 silly lockFile 00dcb118-onitor-forever-monitor-1-2-3-tgz https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.2.3.tgz
+327 verbose lock https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.2.3.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\00dcb118-onitor-forever-monitor-1-2-3-tgz.lock
+328 verbose addRemoteTarball [ 'https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.2.3.tgz',
+328 verbose addRemoteTarball   'b27ac3acb6fdcc7315d6cd85830f2d004733028b' ]
+329 silly addNameRange number 2 { name: 'nconf', range: '>=0.6.9-0 <0.7.0-0', hasData: true }
+330 silly addNameRange versions [ 'nconf',
+330 silly addNameRange   [ '0.1.14',
+330 silly addNameRange     '0.2.0',
+330 silly addNameRange     '0.3.1',
+330 silly addNameRange     '0.4.3',
+330 silly addNameRange     '0.4.4',
+330 silly addNameRange     '0.4.5',
+330 silly addNameRange     '0.4.6',
+330 silly addNameRange     '0.5.0',
+330 silly addNameRange     '0.5.1',
+330 silly addNameRange     '0.6.0',
+330 silly addNameRange     '0.6.1',
+330 silly addNameRange     '0.6.3',
+330 silly addNameRange     '0.6.4',
+330 silly addNameRange     '0.6.5',
+330 silly addNameRange     '0.6.6',
+330 silly addNameRange     '0.6.7',
+330 silly addNameRange     '0.6.8',
+330 silly addNameRange     '0.6.9' ] ]
+331 verbose addNamed [ 'nconf', '0.6.9' ]
+332 verbose addNamed [ '0.6.9', '0.6.9' ]
+333 silly lockFile 66fbcb14-nconf-0-6-9 nconf@0.6.9
+334 verbose lock nconf@0.6.9 C:\Users\c.durbin\AppData\Roaming\npm-cache\66fbcb14-nconf-0-6-9.lock
+335 info retry fetch attempt 1 at 10:31:19
+336 verbose fetch to= C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279985-0.5272464829031378\tmp.tgz
+337 silly lockFile cf4702d8--npmjs-org-nconf-nconf-0-6-9-tgz https://registry.npmjs.org/nconf/-/nconf-0.6.9.tgz
+338 verbose lock https://registry.npmjs.org/nconf/-/nconf-0.6.9.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\cf4702d8--npmjs-org-nconf-nconf-0-6-9-tgz.lock
+339 http GET https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.2.3.tgz
+340 verbose addRemoteTarball [ 'https://registry.npmjs.org/nconf/-/nconf-0.6.9.tgz',
+340 verbose addRemoteTarball   '9570ef15ed6f9ae6b2b3c8d5e71b66d3193cd661' ]
+341 info retry fetch attempt 1 at 10:31:19
+342 verbose fetch to= C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279988-0.03526046592742205\tmp.tgz
+343 http GET https://registry.npmjs.org/nconf/-/nconf-0.6.9.tgz
+344 http 200 https://registry.npmjs.org/cliff
+345 silly registry.get cb [ 200,
+345 silly registry.get   { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+345 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+345 silly registry.get     etag: '"ENLRHGAQP31FT0QCRXUOEU56N"',
+345 silly registry.get     'content-type': 'application/json',
+345 silly registry.get     via: '1.1 varnish',
+345 silly registry.get     'cache-control': 'max-age=1',
+345 silly registry.get     'content-length': '30645',
+345 silly registry.get     'accept-ranges': 'bytes',
+345 silly registry.get     age: '3807',
+345 silly registry.get     'x-served-by': 'cache-v41-ASH, cache-ord1735-ORD',
+345 silly registry.get     'x-cache': 'HIT, MISS',
+345 silly registry.get     'x-cache-hits': '1, 0',
+345 silly registry.get     'x-timer': 'S1401982403.670074,VS0,VE109',
+345 silly registry.get     vary: 'Accept',
+345 silly registry.get     'keep-alive': 'timeout=10, max=50',
+345 silly registry.get     connection: 'Keep-Alive' } ]
+346 silly lockFile 3fad3ff6--npmjs-org-cliff-cliff-0-1-8-tgz https://registry.npmjs.org/cliff/-/cliff-0.1.8.tgz
+347 verbose lock https://registry.npmjs.org/cliff/-/cliff-0.1.8.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\3fad3ff6--npmjs-org-cliff-cliff-0-1-8-tgz.lock
+348 verbose addRemoteTarball [ 'https://registry.npmjs.org/cliff/-/cliff-0.1.8.tgz',
+348 verbose addRemoteTarball   '43ca8ad9fe3943489693ab62dce0cae22509d272' ]
+349 info retry fetch attempt 1 at 10:31:20
+350 verbose fetch to= C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982280004-0.25421844120137393\tmp.tgz
+351 http GET https://registry.npmjs.org/cliff/-/cliff-0.1.8.tgz
+352 http 200 https://registry.npmjs.org/flatiron
+353 silly registry.get cb [ 200,
+353 silly registry.get   { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+353 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+353 silly registry.get     etag: '"LX5OE9UCUMR8KUY9TGI1MA3P"',
+353 silly registry.get     'content-type': 'application/json',
+353 silly registry.get     via: '1.1 varnish',
+353 silly registry.get     'cache-control': 'max-age=1',
+353 silly registry.get     'content-length': '59919',
+353 silly registry.get     'accept-ranges': 'bytes',
+353 silly registry.get     age: '25062',
+353 silly registry.get     'x-served-by': 'cache-v42-ASH, cache-ord1731-ORD',
+353 silly registry.get     'x-cache': 'HIT, HIT',
+353 silly registry.get     'x-cache-hits': '1, 1',
+353 silly registry.get     'x-timer': 'S1401982403.662964,VS0,VE97',
+353 silly registry.get     vary: 'Accept',
+353 silly registry.get     'keep-alive': 'timeout=10, max=50',
+353 silly registry.get     connection: 'Keep-Alive' } ]
+354 silly addNameRange number 2 { name: 'flatiron', range: '>=0.3.11-0 <0.4.0-0', hasData: true }
+355 silly addNameRange versions [ 'flatiron',
+355 silly addNameRange   [ '0.1.2',
+355 silly addNameRange     '0.1.3',
+355 silly addNameRange     '0.1.4',
+355 silly addNameRange     '0.1.5',
+355 silly addNameRange     '0.1.5-1',
+355 silly addNameRange     '0.1.6',
+355 silly addNameRange     '0.1.7',
+355 silly addNameRange     '0.1.7-1',
+355 silly addNameRange     '0.1.8',
+355 silly addNameRange     '0.1.9',
+355 silly addNameRange     '0.1.10',
+355 silly addNameRange     '0.1.11',
+355 silly addNameRange     '0.1.12',
+355 silly addNameRange     '0.1.12-1',
+355 silly addNameRange     '0.1.13',
+355 silly addNameRange     '0.1.14',
+355 silly addNameRange     '0.1.15',
+355 silly addNameRange     '0.1.16',
+355 silly addNameRange     '0.1.17',
+355 silly addNameRange     '0.2.0',
+355 silly addNameRange     '0.2.1',
+355 silly addNameRange     '0.2.2',
+355 silly addNameRange     '0.2.3',
+355 silly addNameRange     '0.2.4',
+355 silly addNameRange     '0.2.5',
+355 silly addNameRange     '0.2.6',
+355 silly addNameRange     '0.2.7',
+355 silly addNameRange     '0.2.8',
+355 silly addNameRange     '0.3.0',
+355 silly addNameRange     '0.3.2',
+355 silly addNameRange     '0.3.3',
+355 silly addNameRange     '0.3.4',
+355 silly addNameRange     '0.3.5',
+355 silly addNameRange     '0.3.6',
+355 silly addNameRange     '0.3.7',
+355 silly addNameRange     '0.3.8',
+355 silly addNameRange     '0.3.9',
+355 silly addNameRange     '0.3.10',
+355 silly addNameRange     '0.3.11' ] ]
+356 verbose addNamed [ 'flatiron', '0.3.11' ]
+357 verbose addNamed [ '0.3.11', '0.3.11' ]
+358 silly lockFile 4d7181da-flatiron-0-3-11 flatiron@0.3.11
+359 verbose lock flatiron@0.3.11 C:\Users\c.durbin\AppData\Roaming\npm-cache\4d7181da-flatiron-0-3-11.lock
+360 silly lockFile 48912921-org-flatiron-flatiron-0-3-11-tgz https://registry.npmjs.org/flatiron/-/flatiron-0.3.11.tgz
+361 verbose lock https://registry.npmjs.org/flatiron/-/flatiron-0.3.11.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\48912921-org-flatiron-flatiron-0-3-11-tgz.lock
+362 verbose addRemoteTarball [ 'https://registry.npmjs.org/flatiron/-/flatiron-0.3.11.tgz',
+362 verbose addRemoteTarball   '1cb0190fc2bd9d860f018e04d95fd35f9bd12555' ]
+363 info retry fetch attempt 1 at 10:31:20
+364 verbose fetch to= C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982280033-0.965220347745344\tmp.tgz
+365 http GET https://registry.npmjs.org/flatiron/-/flatiron-0.3.11.tgz
+366 http 200 https://registry.npmjs.org/timespan
+367 silly registry.get cb [ 200,
+367 silly registry.get   { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+367 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+367 silly registry.get     etag: '"42RSLV4FHF1C4TXT88PF01I5F"',
+367 silly registry.get     'content-type': 'application/json',
+367 silly registry.get     via: '1.1 varnish',
+367 silly registry.get     'cache-control': 'max-age=1',
+367 silly registry.get     'content-length': '11852',
+367 silly registry.get     'accept-ranges': 'bytes',
+367 silly registry.get     age: '2393',
+367 silly registry.get     'x-served-by': 'cache-v42-ASH, cache-ord1731-ORD',
+367 silly registry.get     'x-cache': 'HIT, MISS',
+367 silly registry.get     'x-cache-hits': '1, 0',
+367 silly registry.get     'x-timer': 'S1401982403.806489,VS0,VE27',
+367 silly registry.get     vary: 'Accept',
+367 silly registry.get     'keep-alive': 'timeout=10, max=49',
+367 silly registry.get     connection: 'Keep-Alive' } ]
+368 http 200 https://registry.npmjs.org/optimist
+369 silly registry.get cb [ 200,
+369 silly registry.get   { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+369 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+369 silly registry.get     etag: '"A9DM06UEDJZDNZ4IB3465BAS7"',
+369 silly registry.get     'content-type': 'application/json',
+369 silly registry.get     via: '1.1 varnish',
+369 silly registry.get     'cache-control': 'max-age=1',
+369 silly registry.get     'content-length': '47719',
+369 silly registry.get     'accept-ranges': 'bytes',
+369 silly registry.get     age: '107',
+369 silly registry.get     'x-served-by': 'cache-v37-ASH, cache-ord1734-ORD',
+369 silly registry.get     'x-cache': 'HIT, HIT',
+369 silly registry.get     'x-cache-hits': '1, 1',
+369 silly registry.get     'x-timer': 'S1401982403.800267,VS0,VE0',
+369 silly registry.get     vary: 'Accept',
+369 silly registry.get     'keep-alive': 'timeout=10, max=49',
+369 silly registry.get     connection: 'Keep-Alive' } ]
+370 silly addNameRange number 2 { name: 'timespan', range: '>=2.3.0-0 <2.4.0-0', hasData: true }
+371 silly addNameRange versions [ 'timespan', [ '2.0.0', '2.0.1', '2.1.0', '2.2.0', '2.3.0' ] ]
+372 verbose addNamed [ 'timespan', '2.3.0' ]
+373 verbose addNamed [ '2.3.0', '2.3.0' ]
+374 silly lockFile dabd98fe-timespan-2-3-0 timespan@2.3.0
+375 verbose lock timespan@2.3.0 C:\Users\c.durbin\AppData\Roaming\npm-cache\dabd98fe-timespan-2-3-0.lock
+376 silly addNameRange number 2 { name: 'optimist', range: '>=0.6.0-0 <0.7.0-0', hasData: true }
+377 silly addNameRange versions [ 'optimist',
+377 silly addNameRange   [ '0.0.1',
+377 silly addNameRange     '0.0.2',
+377 silly addNameRange     '0.0.4',
+377 silly addNameRange     '0.0.5',
+377 silly addNameRange     '0.0.6',
+377 silly addNameRange     '0.0.7',
+377 silly addNameRange     '0.1.0',
+377 silly addNameRange     '0.1.1',
+377 silly addNameRange     '0.1.2',
+377 silly addNameRange     '0.1.3',
+377 silly addNameRange     '0.1.4',
+377 silly addNameRange     '0.1.5',
+377 silly addNameRange     '0.1.6',
+377 silly addNameRange     '0.1.7',
+377 silly addNameRange     '0.1.8',
+377 silly addNameRange     '0.1.9',
+377 silly addNameRange     '0.0.3',
+377 silly addNameRange     '0.2.0',
+377 silly addNameRange     '0.2.1',
+377 silly addNameRange     '0.2.2',
+377 silly addNameRange     '0.2.3',
+377 silly addNameRange     '0.2.4',
+377 silly addNameRange     '0.2.5',
+377 silly addNameRange     '0.2.6',
+377 silly addNameRange     '0.2.7',
+377 silly addNameRange     '0.2.8',
+377 silly addNameRange     '0.3.0',
+377 silly addNameRange     '0.3.1',
+377 silly addNameRange     '0.3.3',
+377 silly addNameRange     '0.3.4',
+377 silly addNameRange     '0.3.5',
+377 silly addNameRange     '0.3.6',
+377 silly addNameRange     '0.3.7',
+377 silly addNameRange     '0.4.0',
+377 silly addNameRange     '0.5.0',
+377 silly addNameRange     '0.5.1',
+377 silly addNameRange     '0.5.2',
+377 silly addNameRange     '0.6.0',
+377 silly addNameRange     '0.6.1' ] ]
+378 verbose addNamed [ 'optimist', '0.6.1' ]
+379 verbose addNamed [ '0.6.1', '0.6.1' ]
+380 silly lockFile 0fc74eb8-optimist-0-6-1 optimist@0.6.1
+381 verbose lock optimist@0.6.1 C:\Users\c.durbin\AppData\Roaming\npm-cache\0fc74eb8-optimist-0-6-1.lock
+382 silly lockFile e99091a3--org-optimist-optimist-0-6-1-tgz https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz
+383 verbose lock https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\e99091a3--org-optimist-optimist-0-6-1-tgz.lock
+384 silly lockFile ccd7078f--org-timespan-timespan-2-3-0-tgz https://registry.npmjs.org/timespan/-/timespan-2.3.0.tgz
+385 verbose lock https://registry.npmjs.org/timespan/-/timespan-2.3.0.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\ccd7078f--org-timespan-timespan-2-3-0-tgz.lock
+386 verbose addRemoteTarball [ 'https://registry.npmjs.org/timespan/-/timespan-2.3.0.tgz',
+386 verbose addRemoteTarball   '4902ce040bd13d845c8f59b27e9d59bad6f39929' ]
+387 verbose addRemoteTarball [ 'https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz',
+387 verbose addRemoteTarball   'da3ea74686fa21a19a111c326e90eb15a0196686' ]
+388 info retry fetch attempt 1 at 10:31:20
+389 verbose fetch to= C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982280054-0.22156507219187915\tmp.tgz
+390 info retry fetch attempt 1 at 10:31:20
+391 verbose fetch to= C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982280053-0.323717825114727\tmp.tgz
+392 http GET https://registry.npmjs.org/timespan/-/timespan-2.3.0.tgz
+393 http GET https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz
+394 http 200 https://registry.npmjs.org/utile
+395 silly registry.get cb [ 200,
+395 silly registry.get   { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+395 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+395 silly registry.get     etag: '"BC16ZZBP2PGAQRXUGGZQLBT8W"',
+395 silly registry.get     'content-type': 'application/json',
+395 silly registry.get     via: '1.1 varnish',
+395 silly registry.get     'cache-control': 'max-age=1',
+395 silly registry.get     'content-length': '63401',
+395 silly registry.get     'accept-ranges': 'bytes',
+395 silly registry.get     age: '218',
+395 silly registry.get     'x-served-by': 'cache-v37-ASH, cache-ord1735-ORD',
+395 silly registry.get     'x-cache': 'HIT, HIT',
+395 silly registry.get     'x-cache-hits': '1, 1',
+395 silly registry.get     'x-timer': 'S1401982403.820719,VS0,VE0',
+395 silly registry.get     vary: 'Accept',
+395 silly registry.get     'keep-alive': 'timeout=10, max=49',
+395 silly registry.get     connection: 'Keep-Alive' } ]
+396 http 200 https://registry.npmjs.org/watch
+397 verbose bad json <?xml version="1.0" encoding="utf-8"?>
+397 verbose bad json <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+397 verbose bad json  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+397 verbose bad json <html>
+397 verbose bad json   <head>
+397 verbose bad json     <title>200 OK</title>
+397 verbose bad json   </head>
+397 verbose bad json   <body>
+397 verbose bad json     <h1>Error 200 OK</h1>
+397 verbose bad json     <p>OK</p>
+397 verbose bad json     <h3>Guru Meditation:</h3>
+397 verbose bad json     <p>XID: 724830610</p>
+397 verbose bad json     <hr>
+397 verbose bad json     <p>Varnish cache server</p>
+397 verbose bad json   </body>
+397 verbose bad json </html>
+398 error registry error parsing json
+399 verbose headers { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+399 verbose headers   server: 'Varnish',
+399 verbose headers   'retry-after': '0',
+399 verbose headers   'content-type': 'text/html; charset=utf-8',
+399 verbose headers   via: '1.1 varnish',
+399 verbose headers   'content-length': '367',
+399 verbose headers   'accept-ranges': 'bytes',
+399 verbose headers   age: '76790',
+399 verbose headers   'x-served-by': 'cache-ord1731-ORD',
+399 verbose headers   'x-cache': 'HIT',
+399 verbose headers   'x-cache-hits': '4',
+399 verbose headers   'x-timer': 'S1401982403.862845,VS0,VE0',
+399 verbose headers   'keep-alive': 'timeout=10, max=48',
+399 verbose headers   connection: 'Keep-Alive' }
+400 silly registry.get cb [ 200,
+400 silly registry.get   { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+400 silly registry.get     server: 'Varnish',
+400 silly registry.get     'retry-after': '0',
+400 silly registry.get     'content-type': 'text/html; charset=utf-8',
+400 silly registry.get     via: '1.1 varnish',
+400 silly registry.get     'content-length': '367',
+400 silly registry.get     'accept-ranges': 'bytes',
+400 silly registry.get     age: '76790',
+400 silly registry.get     'x-served-by': 'cache-ord1731-ORD',
+400 silly registry.get     'x-cache': 'HIT',
+400 silly registry.get     'x-cache-hits': '4',
+400 silly registry.get     'x-timer': 'S1401982403.862845,VS0,VE0',
+400 silly registry.get     'keep-alive': 'timeout=10, max=48',
+400 silly registry.get     connection: 'Keep-Alive' } ]
+401 silly lockFile ecc5b56d-watch-0-8-0 watch@~0.8.0
+402 silly lockFile ecc5b56d-watch-0-8-0 watch@~0.8.0
+403 http 304 https://registry.npmjs.org/pkginfo
+404 silly registry.get cb [ 304,
+404 silly registry.get   { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+404 silly registry.get     server: 'Apache',
+404 silly registry.get     via: '1.1 varnish',
+404 silly registry.get     'last-modified': 'Thu, 05 Jun 2014 15:32:23 GMT',
+404 silly registry.get     'cache-control': 'max-age=1',
+404 silly registry.get     etag: '"5D0IBLAT9MFZXBSGIBHMGPDZS"',
+404 silly registry.get     'x-served-by': 'cache-ord1734-ORD',
+404 silly registry.get     'x-cache': 'HIT',
+404 silly registry.get     'x-cache-hits': '4',
+404 silly registry.get     'x-timer': 'S1401982403.870111,VS0,VE0',
+404 silly registry.get     vary: 'Accept',
+404 silly registry.get     'content-length': '0',
+404 silly registry.get     'keep-alive': 'timeout=10, max=48',
+404 silly registry.get     connection: 'Keep-Alive' } ]
+405 verbose etag pkginfo from cache
+406 http 200 https://registry.npmjs.org/colors/-/colors-0.6.2.tgz
+407 verbose about to build C:\Users\c.durbin\AppData\Roaming\npm\node_modules\forever
+408 info C:\Users\c.durbin\AppData\Roaming\npm\node_modules\forever unbuild
+409 info preuninstall forever@0.11.1
+410 info uninstall forever@0.11.1
+411 verbose true,C:\Users\c.durbin\AppData\Roaming\npm\node_modules,C:\Users\c.durbin\AppData\Roaming\npm\node_modules unbuild forever@0.11.1
+412 verbose C:\Users\c.durbin\AppData\Roaming\npm,[object Object] binRoot
+413 verbose tar unpack C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279970-0.3636536970734596\tmp.tgz
+414 silly lockFile 7311614d-g-npm-cache-colors-0-6-2-package tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\colors\0.6.2\package
+415 verbose lock tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\colors\0.6.2\package C:\Users\c.durbin\AppData\Roaming\npm-cache\7311614d-g-npm-cache-colors-0-6-2-package.lock
+416 silly lockFile a6fd90fb-79970-0-3636536970734596-tmp-tgz tar://C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279970-0.3636536970734596\tmp.tgz
+417 verbose lock tar://C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279970-0.3636536970734596\tmp.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\a6fd90fb-79970-0-3636536970734596-tmp-tgz.lock
+418 info postuninstall forever@0.11.1
+419 silly addNameRange number 2 { name: 'utile', range: '>=0.2.1-0 <0.3.0-0', hasData: true }
+420 silly addNameRange versions [ 'utile',
+420 silly addNameRange   [ '0.0.1',
+420 silly addNameRange     '0.0.2',
+420 silly addNameRange     '0.0.3',
+420 silly addNameRange     '0.0.4',
+420 silly addNameRange     '0.0.5',
+420 silly addNameRange     '0.0.6',
+420 silly addNameRange     '0.0.8',
+420 silly addNameRange     '0.0.9',
+420 silly addNameRange     '0.0.10',
+420 silly addNameRange     '0.1.0',
+420 silly addNameRange     '0.1.1',
+420 silly addNameRange     '0.1.2',
+420 silly addNameRange     '0.1.3',
+420 silly addNameRange     '0.1.5',
+420 silly addNameRange     '0.1.6',
+420 silly addNameRange     '0.1.7',
+420 silly addNameRange     '0.2.0',
+420 silly addNameRange     '0.2.1' ] ]
+421 verbose addNamed [ 'utile', '0.2.1' ]
+422 verbose addNamed [ '0.2.1', '0.2.1' ]
+423 silly lockFile 4b19b9b2-utile-0-2-1 utile@0.2.1
+424 verbose lock utile@0.2.1 C:\Users\c.durbin\AppData\Roaming\npm-cache\4b19b9b2-utile-0-2-1.lock
+425 silly lockFile 0d38efc5-js-org-pkginfo-pkginfo-0-3-0-tgz https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz
+426 verbose lock https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\0d38efc5-js-org-pkginfo-pkginfo-0-3-0-tgz.lock
+427 silly gunzTarPerm modes [ '755', '644' ]
+428 http 200 https://registry.npmjs.org/winston
+429 silly registry.get cb [ 200,
+429 silly registry.get   { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+429 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+429 silly registry.get     etag: '"Q3IF6L150KIEKCEJ9LU6K90D"',
+429 silly registry.get     'content-type': 'application/json',
+429 silly registry.get     via: '1.1 varnish',
+429 silly registry.get     'cache-control': 'max-age=1',
+429 silly registry.get     'content-length': '65293',
+429 silly registry.get     'accept-ranges': 'bytes',
+429 silly registry.get     age: '1276',
+429 silly registry.get     'x-served-by': 'cache-v37-ASH, cache-ord1731-ORD',
+429 silly registry.get     'x-cache': 'HIT, HIT',
+429 silly registry.get     'x-cache-hits': '1, 2',
+429 silly registry.get     'x-timer': 'S1401982403.848258,VS0,VE0',
+429 silly registry.get     vary: 'Accept',
+429 silly registry.get     'keep-alive': 'timeout=10, max=49',
+429 silly registry.get     connection: 'Keep-Alive' } ]
+430 verbose addRemoteTarball [ 'https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz',
+430 verbose addRemoteTarball   '726411401039fe9b009eea86614295d5f3a54276' ]
+431 silly lockFile 2e855500--npmjs-org-utile-utile-0-2-1-tgz https://registry.npmjs.org/utile/-/utile-0.2.1.tgz
+432 verbose lock https://registry.npmjs.org/utile/-/utile-0.2.1.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\2e855500--npmjs-org-utile-utile-0-2-1-tgz.lock
+433 info retry fetch attempt 1 at 10:31:20
+434 verbose fetch to= C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982280086-0.6126416649203748\tmp.tgz
+435 verbose addRemoteTarball [ 'https://registry.npmjs.org/utile/-/utile-0.2.1.tgz',
+435 verbose addRemoteTarball   '930c88e99098d6220834c356cbd9a770522d90d7' ]
+436 http GET https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz
+437 info retry fetch attempt 1 at 10:31:20
+438 verbose fetch to= C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982280091-0.2938943183980882\tmp.tgz
+439 http 200 https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.2.3.tgz
+440 silly gunzTarPerm extractEntry package.json
+441 http 200 https://registry.npmjs.org/nconf/-/nconf-0.6.9.tgz
+442 http 200 https://registry.npmjs.org/timespan/-/timespan-2.3.0.tgz
+443 http 200 https://registry.npmjs.org/cliff/-/cliff-0.1.8.tgz
+444 http GET https://registry.npmjs.org/utile/-/utile-0.2.1.tgz
+445 silly gunzTarPerm extractEntry colors.js
+446 silly gunzTarPerm extractEntry example.js
+447 silly addNameRange number 2 { name: 'winston', range: '>=0.7.2-0 <0.8.0-0', hasData: true }
+448 silly addNameRange versions [ 'winston',
+448 silly addNameRange   [ '0.2.11',
+448 silly addNameRange     '0.3.3',
+448 silly addNameRange     '0.3.4',
+448 silly addNameRange     '0.3.5',
+448 silly addNameRange     '0.4.0',
+448 silly addNameRange     '0.4.1',
+448 silly addNameRange     '0.5.0',
+448 silly addNameRange     '0.5.1',
+448 silly addNameRange     '0.5.2',
+448 silly addNameRange     '0.5.3',
+448 silly addNameRange     '0.5.4',
+448 silly addNameRange     '0.5.5',
+448 silly addNameRange     '0.5.6',
+448 silly addNameRange     '0.5.7',
+448 silly addNameRange     '0.5.8',
+448 silly addNameRange     '0.5.9',
+448 silly addNameRange     '0.5.10',
+448 silly addNameRange     '0.5.11',
+448 silly addNameRange     '0.6.1',
+448 silly addNameRange     '0.6.2',
+448 silly addNameRange     '0.7.0',
+448 silly addNameRange     '0.7.1',
+448 silly addNameRange     '0.7.2',
+448 silly addNameRange     '0.7.3' ] ]
+449 verbose addNamed [ 'winston', '0.7.3' ]
+450 verbose addNamed [ '0.7.3', '0.7.3' ]
+451 silly lockFile bed49444-winston-0-7-3 winston@0.7.3
+452 verbose lock winston@0.7.3 C:\Users\c.durbin\AppData\Roaming\npm-cache\bed49444-winston-0-7-3.lock
+453 silly lockFile e7e896fd-js-org-winston-winston-0-7-3-tgz https://registry.npmjs.org/winston/-/winston-0.7.3.tgz
+454 verbose lock https://registry.npmjs.org/winston/-/winston-0.7.3.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\e7e896fd-js-org-winston-winston-0-7-3-tgz.lock
+455 verbose addRemoteTarball [ 'https://registry.npmjs.org/winston/-/winston-0.7.3.tgz',
+455 verbose addRemoteTarball   '7ae313ba73fcdc2ecb4aa2f9cd446e8298677266' ]
+456 info retry fetch attempt 1 at 10:31:20
+457 verbose fetch to= C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982280116-0.5802946600597352\tmp.tgz
+458 verbose tar unpack C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279985-0.5272464829031378\tmp.tgz
+459 silly lockFile 0eaa8a67-he-forever-monitor-1-2-3-package tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\forever-monitor\1.2.3\package
+460 verbose lock tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\forever-monitor\1.2.3\package C:\Users\c.durbin\AppData\Roaming\npm-cache\0eaa8a67-he-forever-monitor-1-2-3-package.lock
+461 silly lockFile bfac197a-79985-0-5272464829031378-tmp-tgz tar://C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279985-0.5272464829031378\tmp.tgz
+462 verbose lock tar://C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982279985-0.5272464829031378\tmp.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\bfac197a-79985-0-5272464829031378-tmp-tgz.lock
+463 silly gunzTarPerm extractEntry test.js
+464 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+465 silly gunzTarPerm extractEntry ReadMe.md
+466 silly gunzTarPerm extractEntry example.html
+467 silly gunzTarPerm extractEntry themes/winston-dark.js
+468 silly gunzTarPerm extractEntry themes/winston-light.js
+469 http GET https://registry.npmjs.org/winston/-/winston-0.7.3.tgz
+470 silly gunzTarPerm modes [ '755', '644' ]
+471 silly gunzTarPerm extractEntry package.json
+472 verbose tar unpack C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982280054-0.22156507219187915\tmp.tgz
+473 silly lockFile bd9bcafe-npm-cache-timespan-2-3-0-package tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\timespan\2.3.0\package
+474 verbose lock tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\timespan\2.3.0\package C:\Users\c.durbin\AppData\Roaming\npm-cache\bd9bcafe-npm-cache-timespan-2-3-0-package.lock
+475 silly lockFile b14e754a-0054-0-22156507219187915-tmp-tgz tar://C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982280054-0.22156507219187915\tmp.tgz
+476 verbose lock tar://C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982280054-0.22156507219187915\tmp.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\b14e754a-0054-0-22156507219187915-tmp-tgz.lock
+477 silly gunzTarPerm extractEntry .npmignore
+478 silly gunzTarPerm extractEntry README.md
+479 silly gunzTarPerm modes [ '755', '644' ]
+480 http 200 https://registry.npmjs.org/nssocket
+481 silly registry.get cb [ 200,
+481 silly registry.get   { date: 'Thu, 05 Jun 2014 15:33:23 GMT',
+481 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+481 silly registry.get     etag: '"EVHT3A7AKP6L9OIIK0IHS8CNI"',
+481 silly registry.get     'content-type': 'application/json',
+481 silly registry.get     via: '1.1 varnish',
+481 silly registry.get     'cache-control': 'max-age=1',
+481 silly registry.get     'content-length': '52798',
+481 silly registry.get     'accept-ranges': 'bytes',
+481 silly registry.get     age: '290',
+481 silly registry.get     'x-served-by': 'cache-v37-ASH, cache-ord1723-ORD',
+481 silly registry.get     'x-cache': 'HIT, HIT',
+481 silly registry.get     'x-cache-hits': '2, 1',
+481 silly registry.get     'x-timer': 'S1401982403.786690,VS0,VE106',
+481 silly registry.get     vary: 'Accept',
+481 silly registry.get     'keep-alive': 'timeout=10, max=49',
+481 silly registry.get     connection: 'Keep-Alive' } ]
+482 http 200 https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz
+483 silly gunzTarPerm extractEntry package.json
+484 silly gunzTarPerm extractEntry .npmignore
+485 silly gunzTarPerm extractEntry README.md
+486 silly gunzTarPerm extractEntry LICENSE
+487 silly gunzTarPerm extractEntry .travis.yml
+488 silly addNameRange number 2 { name: 'nssocket', range: '>=0.5.1-0 <0.6.0-0', hasData: true }
+489 silly addNameRange versions [ 'nssocket',
+489 silly addNameRange   [ '0.1.0',
+489 silly addNameRange     '0.1.1',
+489 silly addNameRange     '0.2.0',
+489 silly addNameRange     '0.2.1',
+489 silly addNameRange     '0.2.2',
+489 silly addNameRange     '0.2.3',
+489 silly addNameRange     '0.2.4',
+489 silly addNameRange     '0.2.5',
+489 silly addNameRange     '0.2.5-1',
+489 silly addNameRange     '0.3.0',
+489 silly addNameRange     '0.3.1',
+489 silly addNameRange     '0.3.2',
+489 silly addNameRange     '0.3.3',
+489 silly addNameRange     '0.3.4',
+489 silly addNameRange     '0.3.5',
+489 silly addNameRange     '0.3.6',
+489 silly addNameRange     '0.3.7',
+489 silly addNameRange     '0.3.8',
+489 silly addNameRange     '0.4.0',
+489 silly addNameRange     '0.5.0',
+489 silly addNameRange     '0.5.1' ] ]
+490 verbose addNamed [ 'nssocket', '0.5.1' ]
+491 verbose addNamed [ '0.5.1', '0.5.1' ]
+492 silly lockFile f616423b-nssocket-0-5-1 nssocket@0.5.1
+493 verbose lock nssocket@0.5.1 C:\Users\c.durbin\AppData\Roaming\npm-cache\f616423b-nssocket-0-5-1.lock
+494 verbose tar unpack C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982280053-0.323717825114727\tmp.tgz
+495 silly lockFile 00263fa6-npm-cache-optimist-0-6-1-package tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\optimist\0.6.1\package
+496 verbose lock tar://C:\Users\c.durbin\AppData\Roaming\npm-cache\optimist\0.6.1\package C:\Users\c.durbin\AppData\Roaming\npm-cache\00263fa6-npm-cache-optimist-0-6-1-package.lock
+497 silly lockFile f5c875c6-280053-0-323717825114727-tmp-tgz tar://C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982280053-0.323717825114727\tmp.tgz
+498 verbose lock tar://C:\Users\C2036~1.DUR\AppData\Local\Temp\npm-10656-pixpYSfZ\1401982280053-0.323717825114727\tmp.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\f5c875c6-280053-0-323717825114727-tmp-tgz.lock
+499 silly lockFile 5ec41cf7--org-nssocket-nssocket-0-5-1-tgz https://registry.npmjs.org/nssocket/-/nssocket-0.5.1.tgz
+500 verbose lock https://registry.npmjs.org/nssocket/-/nssocket-0.5.1.tgz C:\Users\c.durbin\AppData\Roaming\npm-cache\5ec41cf7--org-nssocket-nssocket-0-5-1-tgz.lock
+501 error SyntaxError: Unexpected token <
+501 error
+501 error <?xml version="1.0" encoding="utf-8"?>
+501 error <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+501 error  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+501 error <html>
+501 error   <head>
+501 error     <title>200 OK</title>
+501 error   </head>
+501 error   <body>
+501 error     <h1>Error 200 OK</h1>
+501 error     <p>OK</p>
+501 error     <h3>Guru Meditation:</h3>
+501 error     <p>XID: 724830610</p>
+501 error     <hr>
+501 error     <p>Varnish cache server</p>
+501 error   </body>
+501 error </html>
+501 error
+501 error     at Object.parse (native)
+501 error     at RegClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:239:23)
+501 error     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:211:65)
+501 error     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:123:22)
+501 error     at Request.EventEmitter.emit (events.js:98:17)
+501 error     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:893:14)
+501 error     at Request.EventEmitter.emit (events.js:117:20)
+501 error     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:844:12)
+501 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+501 error     at _stream_readable.js:919:16
+502 error If you need help, you may report this *entire* log,
+502 error including the npm and node versions, at:
+502 error     <http://github.com/npm/npm/issues>
+503 error System Windows_NT 6.1.7601
+504 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "forever"
+505 error cwd C:\Users\c.durbin\lets-chat
+506 error node -v v0.10.28
+507 error npm -v 1.4.9
+508 error type unexpected_token
+509 verbose exit [ 1, true ]

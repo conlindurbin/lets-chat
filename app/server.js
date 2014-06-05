@@ -19,6 +19,7 @@ var passport = require('passport');
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 var LocalStrategy = require('passport-local').Strategy;
 var knox = require('knox');
+var lessMiddleware = require('less-middleware');
 
 // App stuff
 var ChatServer = require('./chat.js');
@@ -92,6 +93,7 @@ var Server = function(config) {
         self.app.set('views', 'templates');
 
         // Static
+        self.app.use(lessMiddleware(__dirname + '/media/css'));
         self.app.use('/media', express.static(path.resolve('media')));
 
         // Router

@@ -1,7 +1,8 @@
 {
   "name": "lcb",
   "version": "0.0.1",
-  "author": "Houssam Haidar <houssam@sdelements.com>",
+  "update_author":"Conlin Durbin <me@conlindurb.in>",
+  "original_author": "Houssam Haidar <houssam@sdelements.com>",
   "contributors": [
     {
       "name": "Jeffery Bain",
@@ -34,7 +35,8 @@
     "passport-google-oauth": "0.1.5",
     "passport.socketio": "1.0.1",
     "knox": "~0.8.9",
-    "mongoose-unique-validator": "~0.3.0"
+    "mongoose-unique-validator": "~0.3.0",
+    "less-middleware": "1.0.3"
   },
   "engine": {
     "node": ">=0.7"
